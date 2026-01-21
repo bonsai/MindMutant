@@ -45,3 +45,14 @@
 ## 11. Sentence Evolution (2026-01-22)
 - **Decision**: Introduce syntax-aware mutation (`mutation.py`) that evolves single words into phrases using connectors (e.g., "みたいな", "を使って", "的").
 - **Reason**: To enable the evolution of complex ideas and sentences from simple keywords, mimicking the development of language/concepts.
+
+## 12. Cloud Environment Strategy (2026-01-22)
+- **Decision**: Prioritize Google Colab optimization. Use Google Drive for storage initially, with plans to integrate Google Cloud Platform (GCP) later.
+- **Reason**: To leverage Colab's computational resources for heavy evolution tasks. Google Drive offers simple initial persistence, while GCP will provide robust scalability and storage in the future.
+
+## 13. Colab Code Structure (2026-01-22)
+- **Decision**: Maintain `src-colab` as a modular package, mirroring `src` but optimized for Colab/Cloud execution. Do NOT flatten into a single "long file" or notebook cells.
+- **Reason**:
+    - **Maintainability**: The project complexity (GA, NLP, etc.) requires separation of concerns. A monolithic notebook is hard to debug and version control.
+    - **Customization**: `src-colab` allows us to strip out local-only dependencies (like Streamlit GUI logic) and add cloud-specific logging/tqdm without polluting the main `src`.
+    - **Execution**: We will run the code by importing modules from `src-colab` in the main notebook (`setup.ipynb` or `run.ipynb`), treating the notebook as a controller, not the implementation.
