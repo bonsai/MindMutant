@@ -1,4 +1,2 @@
-deap
-numpy<2
 fastapi
 uvicorn

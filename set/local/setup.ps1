@@ -2,14 +2,16 @@
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process -Force
 
 $ScriptDir = $PSScriptRoot
-Set-Location $ScriptDir
+# Navigate to project root (2 levels up: set/local -> set -> root)
+$ProjectRoot = Resolve-Path (Join-Path $ScriptDir "..\..")
+Set-Location $ProjectRoot
 
 Write-Host "==========================================" -ForegroundColor Cyan
-Write-Host "   MindMutant Local Setup (set-local)" -ForegroundColor Cyan
+Write-Host "   MindMutant Local Setup (set/local)" -ForegroundColor Cyan
 Write-Host "==========================================" -ForegroundColor Cyan
 
 # 1. Virtual Environment
-$VenvPath = Join-Path $ScriptDir ".venv"
+$VenvPath = Join-Path $ProjectRoot ".venv"
 if (-not (Test-Path $VenvPath)) {
     Write-Host "[1/4] Creating virtual environment (.venv)..." -ForegroundColor Yellow
     python -m venv $VenvPath
@@ -28,9 +30,9 @@ Write-Host "[2/4] Upgrading pip..." -ForegroundColor Yellow
 & $VenvPython -m pip install --upgrade pip
 
 # 3. Install Dependencies
-$ReqPath = Join-Path $ScriptDir "set\requirements_local.txt"
+$ReqPath = Join-Path $ScriptDir "requirements.txt"
 if (Test-Path $ReqPath) {
-    Write-Host "[3/4] Installing dependencies from set/requirements_local.txt..." -ForegroundColor Yellow
+    Write-Host "[3/4] Installing dependencies from set/local/requirements.txt..." -ForegroundColor Yellow
     & $VenvPython -m pip install -r $ReqPath
 } else {
     Write-Error "Requirements file not found: $ReqPath"
@@ -54,4 +56,4 @@ try {
 }
 
 Write-Host "`nLocal Setup Completed Successfully! `u{1F389}" -ForegroundColor Green
-Write-Host "Run './run.ps1' to start the local server." -ForegroundColor Gray
+Write-Host "Run './run.ps1' from project root to start the local server." -ForegroundColor Gray
