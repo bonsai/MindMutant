@@ -30,6 +30,12 @@ app.add_middleware(
 DATA_DIR = os.path.join(os.path.dirname(__file__), '../data')
 
 def get_latest_generation():
+    """
+    Scans the data directory for generation folders (g0, g1, ...) and returns the highest generation number.
+
+    Returns:
+        int: The highest generation number found, or -1 if no generation folders exist.
+    """
     max_g = -1
     if not os.path.exists(DATA_DIR):
         return max_g
@@ -42,6 +48,12 @@ def get_latest_generation():
 
 @app.get("/")
 def read_root_index():
+    """
+    Root endpoint for the API.
+    
+    Returns:
+        dict: A welcome message and status information.
+    """
     return {
         "message": "Welcome to MindMutant API",
         "status": "running",
@@ -50,6 +62,12 @@ def read_root_index():
 
 @app.get("/api")
 def read_root():
+    """
+    API root endpoint.
+
+    Returns:
+        dict: Basic API information and available endpoints.
+    """
     return {
         "message": "MindMutant API is running",
         "endpoints": [
@@ -61,6 +79,12 @@ def read_root():
 
 @app.get("/api/status")
 def get_status():
+    """
+    Retrieves the current status of the MindMutant system.
+
+    Returns:
+        dict: Information about the latest generation and data directory status.
+    """
     g = get_latest_generation()
     return {
         "latest_generation": g,
@@ -70,6 +94,15 @@ def get_status():
 
 @app.post("/api/evolve")
 def trigger_evolution(force_disaster: bool = False):
+    """
+    Triggers the evolution process to create the next generation.
+
+    Args:
+        force_disaster (bool, optional): If True, forces a disaster event (population reduction). Defaults to False.
+
+    Returns:
+        dict: Result of the evolution process including new generation number or error details.
+    """
     if Evolution is None:
         return {"status": "error", "message": "Evolution module could not be imported."}
     
