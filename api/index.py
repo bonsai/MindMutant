@@ -40,6 +40,14 @@ def get_latest_generation():
                 max_g = g_num
     return max_g
 
+@app.get("/")
+def read_root_index():
+    return {
+        "message": "Welcome to MindMutant API",
+        "status": "running",
+        "documentation": "/api/docs"
+    }
+
 @app.get("/api")
 def read_root():
     return {
