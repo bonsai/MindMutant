@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMutant Word Crowd (G4)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            display: flex;
+            flex-wrap: wrap;
+            justify_content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .tag {
+            margin: 10px;
+            padding: 5px 10px;
+            background-color: #333;
+            border-radius: 5px;
+            transition: transform 0.2s;
+            cursor: default;
+            white-space: nowrap;
+        }
+        .tag:hover {
+            transform: scale(1.1);
+            background-color: #444;
+            color: #fff;
+            z-index: 10;
+        }
+        .tag.selected {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #fff;
+        }
+        #controls {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            z-index: 100;
+        }
+        button {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0b7dda;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <button onclick="copyPrompt()">📋 Generate & Copy Prompt</button>
+    </div>
+    <div id="container" style="text-align: center; margin-bottom: 80px;">
+        <span class="tag" style="font-size: 35px; color: hsl(116, 75%, 70%);" title="hydra (Novelty: 0.71)" onclick="toggleSelection(this)">hydra</span>
+        <span class="tag" style="font-size: 14px; color: hsl(262, 75%, 70%);" title="CAD (Novelty: -0.00)" onclick="toggleSelection(this)">CAD</span>
+        <span class="tag" style="font-size: 14px; color: hsl(109, 75%, 70%);" title="はてなA (Novelty: 0.00)" onclick="toggleSelection(this)">はてなA</span>
+        <span class="tag" style="font-size: 14px; color: hsl(325, 75%, 70%);" title="LDR (Novelty: 0.00)" onclick="toggleSelection(this)">LDR</span>
+        <span class="tag" style="font-size: 14px; color: hsl(179, 75%, 70%);" title="p5 (Novelty: 0.00)" onclick="toggleSelection(this)">p5</span>
+        <span class="tag" style="font-size: 14px; color: hsl(262, 75%, 70%);" title="CAD (Novelty: -0.00)" onclick="toggleSelection(this)">CAD</span>
+        <span class="tag" style="font-size: 14px; color: hsl(171, 75%, 70%);" title="vercel (Novelty: 0.00)" onclick="toggleSelection(this)">vercel</span>
+        <span class="tag" style="font-size: 14px; color: hsl(325, 75%, 70%);" title="LDR (Novelty: 0.00)" onclick="toggleSelection(this)">LDR</span>
+        <span class="tag" style="font-size: 14px; color: hsl(325, 75%, 70%);" title="LDR (Novelty: 0.00)" onclick="toggleSelection(this)">LDR</span>
+        <span class="tag" style="font-size: 14px; color: hsl(325, 75%, 70%);" title="LDR (Novelty: 0.00)" onclick="toggleSelection(this)">LDR</span>
+        <span class="tag" style="font-size: 14px; color: hsl(15, 75%, 70%);" title="詩 (Novelty: 0.00)" onclick="toggleSelection(this)">詩</span>
+        <span class="tag" style="font-size: 14px; color: hsl(179, 75%, 70%);" title="p5 (Novelty: 0.00)" onclick="toggleSelection(this)">p5</span>
+        <span class="tag" style="font-size: 14px; color: hsl(325, 75%, 70%);" title="LDR (Novelty: 0.00)" onclick="toggleSelection(this)">LDR</span>
+        <span class="tag" style="font-size: 14px; color: hsl(109, 75%, 70%);" title="はてなA (Novelty: 0.00)" onclick="toggleSelection(this)">はてなA</span>
+        <span class="tag" style="font-size: 14px; color: hsl(179, 75%, 70%);" title="p5 (Novelty: 0.00)" onclick="toggleSelection(this)">p5</span>
+        <span class="tag" style="font-size: 14px; color: hsl(179, 75%, 70%);" title="p5 (Novelty: 0.00)" onclick="toggleSelection(this)">p5</span>
+        <span class="tag" style="font-size: 14px; color: hsl(262, 75%, 70%);" title="CAD (Novelty: -0.00)" onclick="toggleSelection(this)">CAD</span>
+        <span class="tag" style="font-size: 14px; color: hsl(171, 75%, 70%);" title="vercel (Novelty: 0.00)" onclick="toggleSelection(this)">vercel</span>
+        <span class="tag" style="font-size: 14px; color: hsl(15, 75%, 70%);" title="詩 (Novelty: 0.00)" onclick="toggleSelection(this)">詩</span>
+        <span class="tag" style="font-size: 14px; color: hsl(179, 75%, 70%);" title="p5 (Novelty: 0.00)" onclick="toggleSelection(this)">p5</span>
+        <span class="tag" style="font-size: 36px; color: hsl(184, 75%, 70%);" title="#Metaphysics (Novelty: 0.74)" onclick="toggleSelection(this)">#Metaphysics</span>
+        <span class="tag" style="font-size: 37px; color: hsl(123, 75%, 70%);" title="#Quantum (Novelty: 0.80)" onclick="toggleSelection(this)">#Quantum</span>
+        <span class="tag" style="font-size: 34px; color: hsl(136, 75%, 70%);" title="#Dream (Novelty: 0.68)" onclick="toggleSelection(this)">#Dream</span>
+        <span class="tag" style="font-size: 14px; color: hsl(310, 75%, 70%);" title="Cyberpunk (Novelty: 0.00)" onclick="toggleSelection(this)">Cyberpunk</span>
+        <span class="tag" style="font-size: 14px; color: hsl(279, 75%, 70%);" title="Neon (Novelty: 0.00)" onclick="toggleSelection(this)">Neon</span>
+        <span class="tag" style="font-size: 14px; color: hsl(269, 75%, 70%);" title="Zen (Novelty: 0.00)" onclick="toggleSelection(this)">Zen</span>
+        <span class="tag" style="font-size: 34px; color: hsl(44, 75%, 70%);" title="hydra 詩 (Novelty: 0.68)" onclick="toggleSelection(this)">hydra 詩</span>
+        <span class="tag" style="font-size: 14px; color: hsl(41, 75%, 70%);" title="LDR LDR (Novelty: 0.00)" onclick="toggleSelection(this)">LDR LDR</span>
+        <span class="tag" style="font-size: 14px; color: hsl(148, 75%, 70%);" title="p5 vercel (Novelty: 0.00)" onclick="toggleSelection(this)">p5 vercel</span>
+        <span class="tag" style="font-size: 14px; color: hsl(51, 75%, 70%);" title="CAD LDR (Novelty: 0.00)" onclick="toggleSelection(this)">CAD LDR</span>
+        <span class="tag" style="font-size: 14px; color: hsl(344, 75%, 70%);" title="CAD 詩 (Novelty: 0.00)" onclick="toggleSelection(this)">CAD 詩</span>
+        <span class="tag" style="font-size: 35px; color: hsl(3, 75%, 70%);" title="CAD vercel (Novelty: 0.72)" onclick="toggleSelection(this)">CAD vercel</span>
+        <span class="tag" style="font-size: 14px; color: hsl(187, 75%, 70%);" title="CAD hydra (Novelty: 0.00)" onclick="toggleSelection(this)">CAD hydra</span>
+        <span class="tag" style="font-size: 38px; color: hsl(155, 75%, 70%);" title="LDR hydra (Novelty: 0.80)" onclick="toggleSelection(this)">LDR hydra</span>
+        <span class="tag" style="font-size: 14px; color: hsl(41, 75%, 70%);" title="LDR LDR (Novelty: 0.00)" onclick="toggleSelection(this)">LDR LDR</span>
+        <span class="tag" style="font-size: 14px; color: hsl(148, 75%, 70%);" title="p5 vercel (Novelty: 0.00)" onclick="toggleSelection(this)">p5 vercel</span>
+        <span class="tag" style="font-size: 36px; color: hsl(50, 75%, 70%);" title="詩 はてなA (Novelty: 0.76)" onclick="toggleSelection(this)">詩 はてなA</span>
+        <span class="tag" style="font-size: 14px; color: hsl(41, 75%, 70%);" title="LDR LDR (Novelty: 0.00)" onclick="toggleSelection(this)">LDR LDR</span>
+        <span class="tag" style="font-size: 14px; color: hsl(344, 75%, 70%);" title="CAD 詩 (Novelty: 0.00)" onclick="toggleSelection(this)">CAD 詩</span>
+        <span class="tag" style="font-size: 14px; color: hsl(47, 75%, 70%);" title="Math (Novelty: 0.00)" onclick="toggleSelection(this)">Math</span>
+        <span class="tag" style="font-size: 14px; color: hsl(141, 75%, 70%);" title="Metaphysics (Novelty: 0.00)" onclick="toggleSelection(this)">Metaphysics</span>
+        <span class="tag" style="font-size: 14px; color: hsl(139, 75%, 70%);" title="Quantum (Novelty: 0.00)" onclick="toggleSelection(this)">Quantum</span>
+        <span class="tag" style="font-size: 14px; color: hsl(233, 75%, 70%);" title="Dream (Novelty: 0.00)" onclick="toggleSelection(this)">Dream</span>
+        <span class="tag" style="font-size: 14px; color: hsl(310, 75%, 70%);" title="Cyberpunk (Novelty: 0.00)" onclick="toggleSelection(this)">Cyberpunk</span>
+        <span class="tag" style="font-size: 14px; color: hsl(279, 75%, 70%);" title="Neon (Novelty: 0.00)" onclick="toggleSelection(this)">Neon</span>
+        <span class="tag" style="font-size: 14px; color: hsl(269, 75%, 70%);" title="Zen (Novelty: 0.00)" onclick="toggleSelection(this)">Zen</span>
+        <span class="tag" style="font-size: 14px; color: hsl(47, 75%, 70%);" title="Math (Novelty: 0.00)" onclick="toggleSelection(this)">Math</span>
+        <span class="tag" style="font-size: 14px; color: hsl(141, 75%, 70%);" title="Metaphysics (Novelty: 0.00)" onclick="toggleSelection(this)">Metaphysics</span>
+        <span class="tag" style="font-size: 14px; color: hsl(139, 75%, 70%);" title="Quantum (Novelty: 0.00)" onclick="toggleSelection(this)">Quantum</span>
+        <span class="tag" style="font-size: 14px; color: hsl(233, 75%, 70%);" title="Dream (Novelty: 0.00)" onclick="toggleSelection(this)">Dream</span>
+        <span class="tag" style="font-size: 14px; color: hsl(310, 75%, 70%);" title="Cyberpunk (Novelty: 0.00)" onclick="toggleSelection(this)">Cyberpunk</span>
+        <span class="tag" style="font-size: 14px; color: hsl(279, 75%, 70%);" title="Neon (Novelty: 0.00)" onclick="toggleSelection(this)">Neon</span>
+        <span class="tag" style="font-size: 14px; color: hsl(269, 75%, 70%);" title="Zen (Novelty: 0.00)" onclick="toggleSelection(this)">Zen</span>
+        <span class="tag" style="font-size: 36px; color: hsl(335, 75%, 70%);" title="詩 はてなA Cyberpunk (Novelty: 0.77)" onclick="toggleSelection(this)">詩 はてなA Cyberpunk</span>
+        <span class="tag" style="font-size: 36px; color: hsl(243, 75%, 70%);" title="LDR Neon (Novelty: 0.76)" onclick="toggleSelection(this)">LDR Neon</span>
+        <span class="tag" style="font-size: 37px; color: hsl(339, 75%, 70%);" title="LDR #Metaphysics (Novelty: 0.79)" onclick="toggleSelection(this)">LDR #Metaphysics</span>
+        <span class="tag" style="font-size: 35px; color: hsl(12, 75%, 70%);" title="p5 vercel はてなA (Novelty: 0.71)" onclick="toggleSelection(this)">p5 vercel はてなA</span>
+        <span class="tag" style="font-size: 35px; color: hsl(249, 75%, 70%);" title="CAD 詩 Zen (Novelty: 0.71)" onclick="toggleSelection(this)">CAD 詩 Zen</span>
+        <span class="tag" style="font-size: 33px; color: hsl(148, 75%, 70%);" title="Zen 詩 はてなA (Novelty: 0.65)" onclick="toggleSelection(this)">Zen 詩 はてなA</span>
+        <span class="tag" style="font-size: 35px; color: hsl(47, 75%, 70%);" title="CAD LDR p5 (Novelty: 0.71)" onclick="toggleSelection(this)">CAD LDR p5</span>
+        <span class="tag" style="font-size: 35px; color: hsl(119, 75%, 70%);" title="p5 CAD 詩 (Novelty: 0.71)" onclick="toggleSelection(this)">p5 CAD 詩</span>
+        <span class="tag" style="font-size: 35px; color: hsl(57, 75%, 70%);" title="はてなA p5 (Novelty: 0.73)" onclick="toggleSelection(this)">はてなA p5</span>
+        <span class="tag" style="font-size: 37px; color: hsl(197, 75%, 70%);" title="はてなA vercel (Novelty: 0.80)" onclick="toggleSelection(this)">はてなA vercel</span>
+        <span class="tag" style="font-size: 36px; color: hsl(36, 75%, 70%);" title="詩 はてなA LDR LDR (Novelty: 0.74)" onclick="toggleSelection(this)">詩 はてなA LDR LDR</span>
+        <span class="tag" style="font-size: 35px; color: hsl(220, 75%, 70%);" title="vercel LDR LDR (Novelty: 0.73)" onclick="toggleSelection(this)">vercel LDR LDR</span>
+        <span class="tag" style="font-size: 14px; color: hsl(110, 75%, 70%);" title="p5 p5 (Novelty: 0.00)" onclick="toggleSelection(this)">p5 p5</span>
+        <span class="tag" style="font-size: 34px; color: hsl(42, 75%, 70%);" title="LDR hydra p5 vercel (Novelty: 0.67)" onclick="toggleSelection(this)">LDR hydra p5 vercel</span>
+        <span class="tag" style="font-size: 14px; color: hsl(120, 75%, 70%);" title="CAD vercel LDR (Novelty: 0.00)" onclick="toggleSelection(this)">CAD vercel LDR</span>
+        <span class="tag" style="font-size: 33px; color: hsl(127, 75%, 70%);" title="p5 vercel hydra 詩 (Novelty: 0.65)" onclick="toggleSelection(this)">p5 vercel hydra 詩</span>
+        <span class="tag" style="font-size: 36px; color: hsl(27, 75%, 70%);" title="LDR LDR Neon (Novelty: 0.74)" onclick="toggleSelection(this)">LDR LDR Neon</span>
+        <span class="tag" style="font-size: 37px; color: hsl(237, 75%, 70%);" title="p5 CAD hydra (Novelty: 0.78)" onclick="toggleSelection(this)">p5 CAD hydra</span>
+        <span class="tag" style="font-size: 38px; color: hsl(72, 75%, 70%);" title="LDR #Quantum (Novelty: 0.82)" onclick="toggleSelection(this)">LDR #Quantum</span>
+        <span class="tag" style="font-size: 14px; color: hsl(294, 75%, 70%);" title="CAD 詩 CAD (Novelty: 0.00)" onclick="toggleSelection(this)">CAD 詩 CAD</span>
+        <span class="tag" style="font-size: 35px; color: hsl(175, 75%, 70%);" title="vercel p5 vercel (Novelty: 0.72)" onclick="toggleSelection(this)">vercel p5 vercel</span>
+        <span class="tag" style="font-size: 36px; color: hsl(303, 75%, 70%);" title="#Metaphysics LDR LDR (Novelty: 0.75)" onclick="toggleSelection(this)">#Metaphysics LDR LDR</span>
+        <span class="tag" style="font-size: 14px; color: hsl(145, 75%, 70%);" title="Cyberpunk 詩 はてなA (Novelty: 0.00)" onclick="toggleSelection(this)">Cyberpunk 詩 はてなA</span>
+        <span class="tag" style="font-size: 14px; color: hsl(51, 75%, 70%);" title="CAD LDR (Novelty: 0.00)" onclick="toggleSelection(this)">CAD LDR</span>
+        <span class="tag" style="font-size: 36px; color: hsl(340, 75%, 70%);" title="LDR LDR CAD (Novelty: 0.75)" onclick="toggleSelection(this)">LDR LDR CAD</span>
+        <span class="tag" style="font-size: 36px; color: hsl(19, 75%, 70%);" title="Neon CAD 詩 (Novelty: 0.76)" onclick="toggleSelection(this)">Neon CAD 詩</span>
+        <span class="tag" style="font-size: 14px; color: hsl(47, 75%, 70%);" title="Math (Novelty: 0.00)" onclick="toggleSelection(this)">Math</span>
+        <span class="tag" style="font-size: 14px; color: hsl(141, 75%, 70%);" title="Metaphysics (Novelty: 0.00)" onclick="toggleSelection(this)">Metaphysics</span>
+        <span class="tag" style="font-size: 14px; color: hsl(139, 75%, 70%);" title="Quantum (Novelty: 0.00)" onclick="toggleSelection(this)">Quantum</span>
+        <span class="tag" style="font-size: 14px; color: hsl(233, 75%, 70%);" title="Dream (Novelty: 0.00)" onclick="toggleSelection(this)">Dream</span>
+        <span class="tag" style="font-size: 14px; color: hsl(310, 75%, 70%);" title="Cyberpunk (Novelty: 0.00)" onclick="toggleSelection(this)">Cyberpunk</span>
+        <span class="tag" style="font-size: 14px; color: hsl(279, 75%, 70%);" title="Neon (Novelty: 0.00)" onclick="toggleSelection(this)">Neon</span>
+        <span class="tag" style="font-size: 14px; color: hsl(269, 75%, 70%);" title="Zen (Novelty: 0.00)" onclick="toggleSelection(this)">Zen</span>
+        <span class="tag" style="font-size: 36px; color: hsl(172, 75%, 70%);" title="Zen 詩 はてなA CAD LDR (Novelty: 0.73)" onclick="toggleSelection(this)">Zen 詩 はてなA CAD LDR</span>
+        <span class="tag" style="font-size: 35px; color: hsl(302, 75%, 70%);" title="p5 p5 LDR #Metaphysics (Novelty: 0.71)" onclick="toggleSelection(this)">p5 p5 LDR #Metaphysics</span>
+        <span class="tag" style="font-size: 35px; color: hsl(91, 75%, 70%);" title="p5 vercel vercel (Novelty: 0.72)" onclick="toggleSelection(this)">p5 vercel vercel</span>
+        <span class="tag" style="font-size: 14px; color: hsl(110, 75%, 70%);" title="p5 p5 (Novelty: 0.00)" onclick="toggleSelection(this)">p5 p5</span>
+        <span class="tag" style="font-size: 36px; color: hsl(235, 75%, 70%);" title="Cyberpunk 詩 はてなA CAD hydra (Novelty: 0.74)" onclick="toggleSelection(this)">Cyberpunk 詩 はてなA CAD hydra</span>
+        <span class="tag" style="font-size: 33px; color: hsl(257, 75%, 70%);" title="p5 CAD 詩 Cyberpunk (Novelty: 0.65)" onclick="toggleSelection(this)">p5 CAD 詩 Cyberpunk</span>
+        <span class="tag" style="font-size: 37px; color: hsl(111, 75%, 70%);" title="Zen CAD vercel (Novelty: 0.78)" onclick="toggleSelection(this)">Zen CAD vercel</span>
+        <span class="tag" style="font-size: 37px; color: hsl(56, 75%, 70%);" title="#Dream CAD (Novelty: 0.78)" onclick="toggleSelection(this)">#Dream CAD</span>
+        <span class="tag" style="font-size: 37px; color: hsl(177, 75%, 70%);" title="詩 はてなA LDR LDR Dream (Novelty: 0.77)" onclick="toggleSelection(this)">詩 はてなA LDR LDR Dream</span>
+        <span class="tag" style="font-size: 36px; color: hsl(339, 75%, 70%);" title="Quantum CAD (Novelty: 0.77)" onclick="toggleSelection(this)">Quantum CAD</span>
+        <span class="tag" style="font-size: 34px; color: hsl(36, 75%, 70%);" title="詩 はてなA CAD (Novelty: 0.67)" onclick="toggleSelection(this)">詩 はてなA CAD</span>
+        <span class="tag" style="font-size: 14px; color: hsl(121, 75%, 70%);" title="Math CAD (Novelty: 0.00)" onclick="toggleSelection(this)">Math CAD</span>
+        <span class="tag" style="font-size: 14px; color: hsl(264, 75%, 70%);" title="LDR Neon p5 (Novelty: 0.00)" onclick="toggleSelection(this)">LDR Neon p5</span>
+        <span class="tag" style="font-size: 14px; color: hsl(120, 75%, 70%);" title="CAD vercel LDR (Novelty: 0.00)" onclick="toggleSelection(this)">CAD vercel LDR</span>
+        <span class="tag" style="font-size: 34px; color: hsl(302, 75%, 70%);" title="CAD 詩 Zen p5 (Novelty: 0.69)" onclick="toggleSelection(this)">CAD 詩 Zen p5</span>
+        <span class="tag" style="font-size: 35px; color: hsl(8, 75%, 70%);" title="LDR Neon CAD vercel LDR (Novelty: 0.72)" onclick="toggleSelection(this)">LDR Neon CAD vercel LDR</span>
+        <span class="tag" style="font-size: 36px; color: hsl(129, 75%, 70%);" title="LDR hydra CAD 詩 (Novelty: 0.76)" onclick="toggleSelection(this)">LDR hydra CAD 詩</span>
+        <span class="tag" style="font-size: 35px; color: hsl(161, 75%, 70%);" title="はてなA p5 Metaphysics (Novelty: 0.71)" onclick="toggleSelection(this)">はてなA p5 Metaphysics</span>
+        <span class="tag" style="font-size: 36px; color: hsl(334, 75%, 70%);" title="Dream Cyberpunk (Novelty: 0.76)" onclick="toggleSelection(this)">Dream Cyberpunk</span>
+        <span class="tag" style="font-size: 36px; color: hsl(203, 75%, 70%);" title="CAD vercel LDR #Quantum (Novelty: 0.76)" onclick="toggleSelection(this)">CAD vercel LDR #Quantum</span>
+        <span class="tag" style="font-size: 36px; color: hsl(297, 75%, 70%);" title="#Metaphysics LDR (Novelty: 0.74)" onclick="toggleSelection(this)">#Metaphysics LDR</span>
+        <span class="tag" style="font-size: 14px; color: hsl(301, 75%, 70%);" title="Cyberpunk CAD (Novelty: 0.00)" onclick="toggleSelection(this)">Cyberpunk CAD</span>
+        <span class="tag" style="font-size: 35px; color: hsl(328, 75%, 70%);" title="vercel LDR LDR Cyberpunk (Novelty: 0.71)" onclick="toggleSelection(this)">vercel LDR LDR Cyberpunk</span>
+        <span class="tag" style="font-size: 37px; color: hsl(168, 75%, 70%);" title="LDR LDR LDR hydra (Novelty: 0.79)" onclick="toggleSelection(this)">LDR LDR LDR hydra</span>
+        <span class="tag" style="font-size: 35px; color: hsl(282, 75%, 70%);" title="LDR hydra p5 vercel 詩 (Novelty: 0.71)" onclick="toggleSelection(this)">LDR hydra p5 vercel 詩</span>
+        <span class="tag" style="font-size: 36px; color: hsl(218, 75%, 70%);" title="vercel p5 vercel LDR #Quantum (Novelty: 0.75)" onclick="toggleSelection(this)">vercel p5 vercel LDR #Quantum</span>
+        <span class="tag" style="font-size: 14px; color: hsl(294, 75%, 70%);" title="CAD 詩 CAD (Novelty: 0.00)" onclick="toggleSelection(this)">CAD 詩 CAD</span>
+        <span class="tag" style="font-size: 33px; color: hsl(156, 75%, 70%);" title="CAD LDR p5 Quantum (Novelty: 0.66)" onclick="toggleSelection(this)">CAD LDR p5 Quantum</span>
+        <span class="tag" style="font-size: 35px; color: hsl(257, 75%, 70%);" title="CAD LDR p5 p5 p5 (Novelty: 0.73)" onclick="toggleSelection(this)">CAD LDR p5 p5 p5</span>
+        <span class="tag" style="font-size: 37px; color: hsl(116, 75%, 70%);" title="LDR LDR CAD vercel (Novelty: 0.80)" onclick="toggleSelection(this)">LDR LDR CAD vercel</span>
+        <span class="tag" style="font-size: 37px; color: hsl(85, 75%, 70%);" title="LDR LDR Neon LDR (Novelty: 0.77)" onclick="toggleSelection(this)">LDR LDR Neon LDR</span>
+        <span class="tag" style="font-size: 36px; color: hsl(116, 75%, 70%);" title="Metaphysics p5 p5 (Novelty: 0.76)" onclick="toggleSelection(this)">Metaphysics p5 p5</span>
+        <span class="tag" style="font-size: 35px; color: hsl(133, 75%, 70%);" title="LDR p5 (Novelty: 0.71)" onclick="toggleSelection(this)">LDR p5</span>
+        <span class="tag" style="font-size: 36px; color: hsl(210, 75%, 70%);" title="はてなA vercel Metaphysics (Novelty: 0.74)" onclick="toggleSelection(this)">はてなA vercel Metaphysics</span>
+        <span class="tag" style="font-size: 14px; color: hsl(51, 75%, 70%);" title="CAD LDR (Novelty: 0.00)" onclick="toggleSelection(this)">CAD LDR</span>
+        <span class="tag" style="font-size: 36px; color: hsl(224, 75%, 70%);" title="Zen #Metaphysics (Novelty: 0.74)" onclick="toggleSelection(this)">Zen #Metaphysics</span>
+        <span class="tag" style="font-size: 35px; color: hsl(360, 75%, 70%);" title="Cyberpunk p5 (Novelty: 0.72)" onclick="toggleSelection(this)">Cyberpunk p5</span>
+        <span class="tag" style="font-size: 14px; color: hsl(191, 75%, 70%);" title="Quantum LDR LDR (Novelty: 0.00)" onclick="toggleSelection(this)">Quantum LDR LDR</span>
+        <span class="tag" style="font-size: 36px; color: hsl(283, 75%, 70%);" title="p5 p5 LDR (Novelty: 0.74)" onclick="toggleSelection(this)">p5 p5 LDR</span>
+        <span class="tag" style="font-size: 35px; color: hsl(195, 75%, 70%);" title="Cyberpunk hydra (Novelty: 0.71)" onclick="toggleSelection(this)">Cyberpunk hydra</span>
+        <span class="tag" style="font-size: 37px; color: hsl(105, 75%, 70%);" title="Neon LDR (Novelty: 0.79)" onclick="toggleSelection(this)">Neon LDR</span>
+        <span class="tag" style="font-size: 37px; color: hsl(232, 75%, 70%);" title="#Quantum LDR LDR (Novelty: 0.77)" onclick="toggleSelection(this)">#Quantum LDR LDR</span>
+        <span class="tag" style="font-size: 35px; color: hsl(99, 75%, 70%);" title="#Metaphysics CAD (Novelty: 0.73)" onclick="toggleSelection(this)">#Metaphysics CAD</span>
+        <span class="tag" style="font-size: 14px; color: hsl(145, 75%, 70%);" title="Cyberpunk 詩 はてなA (Novelty: 0.00)" onclick="toggleSelection(this)">Cyberpunk 詩 はてなA</span>
+        <span class="tag" style="font-size: 35px; color: hsl(156, 75%, 70%);" title="p5 p5 LDR #Metaphysics Math CAD (Novelty: 0.71)" onclick="toggleSelection(this)">p5 p5 LDR #Metaphysics Math CAD</span>
+        <span class="tag" style="font-size: 14px; color: hsl(191, 75%, 70%);" title="Quantum LDR LDR (Novelty: 0.00)" onclick="toggleSelection(this)">Quantum LDR LDR</span>
+        <span class="tag" style="font-size: 35px; color: hsl(59, 75%, 70%);" title="CAD LDR vercel LDR LDR (Novelty: 0.73)" onclick="toggleSelection(this)">CAD LDR vercel LDR LDR</span>
+        <span class="tag" style="font-size: 34px; color: hsl(37, 75%, 70%);" title="#Quantum LDR LDR vercel (Novelty: 0.69)" onclick="toggleSelection(this)">#Quantum LDR LDR vercel</span>
+        <span class="tag" style="font-size: 36px; color: hsl(330, 75%, 70%);" title="p5 CAD 詩 LDR hydra (Novelty: 0.75)" onclick="toggleSelection(this)">p5 CAD 詩 LDR hydra</span>
+        <span class="tag" style="font-size: 14px; color: hsl(42, 75%, 70%);" title="Metaphysics CAD LDR (Novelty: 0.00)" onclick="toggleSelection(this)">Metaphysics CAD LDR</span>
+        <span class="tag" style="font-size: 34px; color: hsl(257, 75%, 70%);" title="LDR LDR CAD p5 vercel (Novelty: 0.68)" onclick="toggleSelection(this)">LDR LDR CAD p5 vercel</span>
+        <span class="tag" style="font-size: 34px; color: hsl(306, 75%, 70%);" title="LDR Neon p5 Zen 詩 はてなA CAD LDR (Novelty: 0.69)" onclick="toggleSelection(this)">LDR Neon p5 Zen 詩 はてなA CAD LDR</span>
+        <span class="tag" style="font-size: 36px; color: hsl(326, 75%, 70%);" title="Neon CAD 詩 はてなA vercel (Novelty: 0.74)" onclick="toggleSelection(this)">Neon CAD 詩 はてなA vercel</span>
+        <span class="tag" style="font-size: 36px; color: hsl(228, 75%, 70%);" title="vercel LDR LDR Cyberpunk はてなA vercel (Novelty: 0.74)" onclick="toggleSelection(this)">vercel LDR LDR Cyberpunk はてなA vercel</span>
+        <span class="tag" style="font-size: 36px; color: hsl(222, 75%, 70%);" title="p5 p5 LDR #Metaphysics p5 vercel (Novelty: 0.73)" onclick="toggleSelection(this)">p5 p5 LDR #Metaphysics p5 vercel</span>
+        <span class="tag" style="font-size: 35px; color: hsl(254, 75%, 70%);" title="Metaphysics hydra 詩 (Novelty: 0.70)" onclick="toggleSelection(this)">Metaphysics hydra 詩</span>
+        <span class="tag" style="font-size: 36px; color: hsl(327, 75%, 70%);" title="CAD LDR p5 Quantum p5 p5 (Novelty: 0.74)" onclick="toggleSelection(this)">CAD LDR p5 Quantum p5 p5</span>
+        <span class="tag" style="font-size: 34px; color: hsl(227, 75%, 70%);" title="vercel LDR LDR Cyberpunk LDR (Novelty: 0.67)" onclick="toggleSelection(this)">vercel LDR LDR Cyberpunk LDR</span>
+        <span class="tag" style="font-size: 33px; color: hsl(44, 75%, 70%);" title="CAD 詩 CAD vercel p5 vercel (Novelty: 0.65)" onclick="toggleSelection(this)">CAD 詩 CAD vercel p5 vercel</span>
+        <span class="tag" style="font-size: 14px; color: hsl(301, 75%, 70%);" title="Cyberpunk CAD (Novelty: 0.00)" onclick="toggleSelection(this)">Cyberpunk CAD</span>
+        <span class="tag" style="font-size: 36px; color: hsl(102, 75%, 70%);" title="Cyberpunk hydra CAD 詩 CAD (Novelty: 0.73)" onclick="toggleSelection(this)">Cyberpunk hydra CAD 詩 CAD</span>
+        <span class="tag" style="font-size: 37px; color: hsl(54, 75%, 70%);" title="CAD 詩 CAD p5 (Novelty: 0.77)" onclick="toggleSelection(this)">CAD 詩 CAD p5</span>
+        <span class="tag" style="font-size: 14px; color: hsl(264, 75%, 70%);" title="LDR Neon p5 (Novelty: 0.00)" onclick="toggleSelection(this)">LDR Neon p5</span>
+        <span class="tag" style="font-size: 35px; color: hsl(146, 75%, 70%);" title="#Metaphysics CAD Cyberpunk p5 (Novelty: 0.70)" onclick="toggleSelection(this)">#Metaphysics CAD Cyberpunk p5</span>
+        <span class="tag" style="font-size: 36px; color: hsl(11, 75%, 70%);" title="LDR hydra p5 vercel 詩 Dream (Novelty: 0.76)" onclick="toggleSelection(this)">LDR hydra p5 vercel 詩 Dream</span>
+        <span class="tag" style="font-size: 36px; color: hsl(320, 75%, 70%);" title="Cyberpunk p5 詩 はてなA CAD (Novelty: 0.75)" onclick="toggleSelection(this)">Cyberpunk p5 詩 はてなA CAD</span>
+        <span class="tag" style="font-size: 37px; color: hsl(158, 75%, 70%);" title="p5 CAD 詩 Cyberpunk 詩 はてなA Cyberpunk (Novelty: 0.77)" onclick="toggleSelection(this)">p5 CAD 詩 Cyberpunk 詩 はてなA Cyberpunk</span>
+        <span class="tag" style="font-size: 36px; color: hsl(173, 75%, 70%);" title="Cyberpunk 詩 はてなA CAD hydra Zen 詩 はてなA (Novelty: 0.75)" onclick="toggleSelection(this)">Cyberpunk 詩 はてなA CAD hydra Zen 詩 はてなA</span>
+        <span class="tag" style="font-size: 35px; color: hsl(228, 75%, 70%);" title="p5 vercel vercel LDR hydra p5 vercel 詩 (Novelty: 0.72)" onclick="toggleSelection(this)">p5 vercel vercel LDR hydra p5 vercel 詩</span>
+        <span class="tag" style="font-size: 35px; color: hsl(207, 75%, 70%);" title="LDR hydra CAD 詩 詩 (Novelty: 0.71)" onclick="toggleSelection(this)">LDR hydra CAD 詩 詩</span>
+        <span class="tag" style="font-size: 33px; color: hsl(58, 75%, 70%);" title="CAD LDR vercel (Novelty: 0.65)" onclick="toggleSelection(this)">CAD LDR vercel</span>
+        <span class="tag" style="font-size: 36px; color: hsl(95, 75%, 70%);" title="Cyberpunk LDR LDR (Novelty: 0.75)" onclick="toggleSelection(this)">Cyberpunk LDR LDR</span>
+        <span class="tag" style="font-size: 35px; color: hsl(225, 75%, 70%);" title="Neon CAD 詩 Metaphysics (Novelty: 0.71)" onclick="toggleSelection(this)">Neon CAD 詩 Metaphysics</span>
+        <span class="tag" style="font-size: 36px; color: hsl(64, 75%, 70%);" title="Zen CAD vercel 詩 はてなA LDR LDR (Novelty: 0.76)" onclick="toggleSelection(this)">Zen CAD vercel 詩 はてなA LDR LDR</span>
+        <span class="tag" style="font-size: 36px; color: hsl(25, 75%, 70%);" title="Zen p5 (Novelty: 0.74)" onclick="toggleSelection(this)">Zen p5</span>
+        <span class="tag" style="font-size: 36px; color: hsl(355, 75%, 70%);" title="#Quantum LDR LDR 詩 はてなA LDR LDR Dream (Novelty: 0.74)" onclick="toggleSelection(this)">#Quantum LDR LDR 詩 はてなA LDR LDR Dream</span>
+        <span class="tag" style="font-size: 35px; color: hsl(318, 75%, 70%);" title="CAD 詩 Zen p5 CAD 詩 (Novelty: 0.71)" onclick="toggleSelection(this)">CAD 詩 Zen p5 CAD 詩</span>
+        <span class="tag" style="font-size: 14px; color: hsl(42, 75%, 70%);" title="Metaphysics CAD LDR (Novelty: 0.00)" onclick="toggleSelection(this)">Metaphysics CAD LDR</span>
+        <span class="tag" style="font-size: 33px; color: hsl(113, 75%, 70%);" title="LDR LDR LDR LDR (Novelty: 0.65)" onclick="toggleSelection(this)">LDR LDR LDR LDR</span>
+        <span class="tag" style="font-size: 37px; color: hsl(44, 75%, 70%);" title="詩 はてなA Cyberpunk LDR (Novelty: 0.79)" onclick="toggleSelection(this)">詩 はてなA Cyberpunk LDR</span>
+        <span class="tag" style="font-size: 37px; color: hsl(357, 75%, 70%);" title="vercel LDR LDR Cyberpunk Zen (Novelty: 0.77)" onclick="toggleSelection(this)">vercel LDR LDR Cyberpunk Zen</span>
+        <span class="tag" style="font-size: 35px; color: hsl(50, 75%, 70%);" title="#Dream CAD Cyberpunk (Novelty: 0.71)" onclick="toggleSelection(this)">#Dream CAD Cyberpunk</span>
+        <span class="tag" style="font-size: 37px; color: hsl(175, 75%, 70%);" title="はてなA vercel Metaphysics CAD vercel LDR (Novelty: 0.77)" onclick="toggleSelection(this)">はてなA vercel Metaphysics CAD vercel LDR</span>
+        <span class="tag" style="font-size: 14px; color: hsl(121, 75%, 70%);" title="Math CAD (Novelty: 0.00)" onclick="toggleSelection(this)">Math CAD</span>
+        <span class="tag" style="font-size: 34px; color: hsl(129, 75%, 70%);" title="LDR LDR CAD CAD vercel LDR (Novelty: 0.70)" onclick="toggleSelection(this)">LDR LDR CAD CAD vercel LDR</span>
+        <span class="tag" style="font-size: 35px; color: hsl(327, 75%, 70%);" title="LDR hydra p5 vercel 詩 vercel p5 vercel LDR #Quantum (Novelty: 0.72)" onclick="toggleSelection(this)">LDR hydra p5 vercel 詩 vercel p5 vercel LDR #Quantum</span>
+        <span class="tag" style="font-size: 35px; color: hsl(121, 75%, 70%);" title="Zen CAD vercel #Metaphysics (Novelty: 0.71)" onclick="toggleSelection(this)">Zen CAD vercel #Metaphysics</span>
+        <span class="tag" style="font-size: 34px; color: hsl(289, 75%, 70%);" title="p5 p5 CAD (Novelty: 0.68)" onclick="toggleSelection(this)">p5 p5 CAD</span>
+        <span class="tag" style="font-size: 35px; color: hsl(340, 75%, 70%);" title="CAD LDR 詩 (Novelty: 0.71)" onclick="toggleSelection(this)">CAD LDR 詩</span>
+        <span class="tag" style="font-size: 14px; color: hsl(187, 75%, 70%);" title="CAD hydra (Novelty: 0.00)" onclick="toggleSelection(this)">CAD hydra</span>
+        <span class="tag" style="font-size: 36px; color: hsl(215, 75%, 70%);" title="LDR LDR LDR hydra Zen 詩 はてなA (Novelty: 0.74)" onclick="toggleSelection(this)">LDR LDR LDR hydra Zen 詩 はてなA</span>
+        <span class="tag" style="font-size: 37px; color: hsl(194, 75%, 70%);" title="Zen #Metaphysics CAD 詩 CAD (Novelty: 0.78)" onclick="toggleSelection(this)">Zen #Metaphysics CAD 詩 CAD</span>
+        <span class="tag" style="font-size: 37px; color: hsl(206, 75%, 70%);" title="p5 CAD 詩 Math (Novelty: 0.79)" onclick="toggleSelection(this)">p5 CAD 詩 Math</span>
+        <span class="tag" style="font-size: 36px; color: hsl(350, 75%, 70%);" title="#Metaphysics CAD p5 (Novelty: 0.74)" onclick="toggleSelection(this)">#Metaphysics CAD p5</span>
+        <span class="tag" style="font-size: 35px; color: hsl(161, 75%, 70%);" title="Dream Cyberpunk 詩 はてなA (Novelty: 0.72)" onclick="toggleSelection(this)">Dream Cyberpunk 詩 はてなA</span>
+        <span class="tag" style="font-size: 35px; color: hsl(109, 75%, 70%);" title="Cyberpunk hydra 詩 (Novelty: 0.73)" onclick="toggleSelection(this)">Cyberpunk hydra 詩</span>
+        <span class="tag" style="font-size: 36px; color: hsl(107, 75%, 70%);" title="Cyberpunk CAD p5 vercel はてなA (Novelty: 0.74)" onclick="toggleSelection(this)">Cyberpunk CAD p5 vercel はてなA</span>
+        <span class="tag" style="font-size: 37px; color: hsl(131, 75%, 70%);" title="Neon LDR LDR (Novelty: 0.77)" onclick="toggleSelection(this)">Neon LDR LDR</span>
+        <span class="tag" style="font-size: 35px; color: hsl(165, 75%, 70%);" title="Neon Cyberpunk (Novelty: 0.71)" onclick="toggleSelection(this)">Neon Cyberpunk</span>
+        <span class="tag" style="font-size: 34px; color: hsl(115, 75%, 70%);" title="p5 vercel vercel LDR Neon CAD vercel LDR (Novelty: 0.68)" onclick="toggleSelection(this)">p5 vercel vercel LDR Neon CAD vercel LDR</span>
+        <span class="tag" style="font-size: 36px; color: hsl(15, 75%, 70%);" title="Dream Cyberpunk p5 vercel hydra 詩 (Novelty: 0.74)" onclick="toggleSelection(this)">Dream Cyberpunk p5 vercel hydra 詩</span>
+        <span class="tag" style="font-size: 36px; color: hsl(98, 75%, 70%);" title="LDR LDR Neon LDR LDR p5 (Novelty: 0.74)" onclick="toggleSelection(this)">LDR LDR Neon LDR LDR p5</span>
+        <span class="tag" style="font-size: 36px; color: hsl(245, 75%, 70%);" title="詩 はてなA LDR LDR Dream #Dream CAD (Novelty: 0.76)" onclick="toggleSelection(this)">詩 はてなA LDR LDR Dream #Dream CAD</span>
+        <span class="tag" style="font-size: 36px; color: hsl(65, 75%, 70%);" title="p5 vercel vercel LDR LDR (Novelty: 0.74)" onclick="toggleSelection(this)">p5 vercel vercel LDR LDR</span>
+        <span class="tag" style="font-size: 35px; color: hsl(168, 75%, 70%);" title="vercel LDR LDR Cyberpunk 詩 はてなA (Novelty: 0.73)" onclick="toggleSelection(this)">vercel LDR LDR Cyberpunk 詩 はてなA</span>
+        <span class="tag" style="font-size: 35px; color: hsl(35, 75%, 70%);" title="CAD vercel LDR #Quantum Neon (Novelty: 0.71)" onclick="toggleSelection(this)">CAD vercel LDR #Quantum Neon</span>
+        <span class="tag" style="font-size: 36px; color: hsl(349, 75%, 70%);" title="p5 CAD hydra p5 (Novelty: 0.73)" onclick="toggleSelection(this)">p5 CAD hydra p5</span>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle('selected');
+        }
+
+        function copyPrompt() {
+            const selectedElements = document.querySelectorAll('.tag.selected');
+            let words = [];
+            
+            if (selectedElements.length > 0) {
+                // Use selected words
+                selectedElements.forEach(el => words.push(el.innerText));
+            } else {
+                // If nothing selected, use all words (limit to 20 random to avoid too long prompt)
+                const allTags = Array.from(document.querySelectorAll('.tag'));
+                const shuffled = allTags.sort(() => 0.5 - Math.random());
+                words = shuffled.slice(0, 20).map(el => el.innerText);
+                alert("No words selected. Using 20 random words.");
+            }
+
+            const prompt = `Write a short story using these concepts:\n\n${words.join(', ')}`;
+            
+            navigator.clipboard.writeText(prompt).then(() => {
+                alert('Prompt copied to clipboard!\n\n' + prompt);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert('Failed to copy to clipboard.');
+            });
+        }
+    </script>
+</body>
+</html>

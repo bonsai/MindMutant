@@ -1,0 +1,1721 @@
+[
+  {
+    "id": "3ea1e423-6019-4ad8-bb30-3b240ba580cb",
+    "content": "LDR #Quantum",
+    "parents": [
+      "8d2e6b80-fe40-4143-b1d6-db73ac7c14d4",
+      "7cc6ff74-3ffa-47c2-a3ef-d81df5410f3e"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.7958754866371436
+    }
+  },
+  {
+    "id": "815a1390-dc44-4582-ac03-d41a2415dd7f",
+    "content": "LDR hydra",
+    "parents": [
+      "e69a84ae-fd9f-4995-a89d-6d92e830e2da",
+      "8d9a5d17-3614-424c-80ee-3dd5ccfecda0"
+    ],
+    "generation": 1,
+    "fitness": {
+      "novelty": 0.8221427816893399
+    }
+  },
+  {
+    "id": "e1ea3d7e-52f8-4866-81d5-c210d239efc0",
+    "content": "はてなA vercel",
+    "parents": [
+      "48261702-5666-4b8c-b9bb-1994fe5ccb5a",
+      "5de64685-6376-47fd-a626-05a693a7af94"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.7387646998095461
+    }
+  },
+  {
+    "id": "04479cbb-e2d2-44bb-ac6d-54ea4bf92969",
+    "content": "LDR LDR CAD vercel",
+    "parents": [
+      "c49c68b4-28fd-4c53-8b2c-7a7d4a55bf71",
+      "5de64685-6376-47fd-a626-05a693a7af94"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7968550595071179
+    }
+  },
+  {
+    "id": "7cc6ff74-3ffa-47c2-a3ef-d81df5410f3e",
+    "content": "#Quantum",
+    "parents": [],
+    "generation": 1,
+    "fitness": {
+      "novelty": 0.7159737442239082
+    }
+  },
+  {
+    "id": "ec0c3bb7-4d6e-42e5-b531-b1ba1131bb93",
+    "content": "LDR #Metaphysics",
+    "parents": [
+      "e69a84ae-fd9f-4995-a89d-6d92e830e2da",
+      "c4c90236-dc34-46ad-9094-ed27396e0a21"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.7891026511986026
+    }
+  },
+  {
+    "id": "928b1282-1af1-4018-be95-812ea417e784",
+    "content": "詩 はてなA Cyberpunk LDR",
+    "parents": [
+      "26f76cdd-b54d-45b7-98b5-1f98ec9c6472",
+      "a7974ffa-6e42-4e2b-bb90-6e32d8faebc6"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.781493876344966
+    }
+  },
+  {
+    "id": "bd3afff7-a4b7-427a-86ff-7a450f6967d3",
+    "content": "Neon LDR",
+    "parents": [
+      "8d2e6b80-fe40-4143-b1d6-db73ac7c14d4",
+      "f5d2bb6c-b572-49e6-92a2-859b4c3c0f90"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.0
+    }
+  },
+  {
+    "id": "ba9c64f8-0d14-420c-8fe4-7c6ca9a6f591",
+    "content": "p5 CAD 詩 Math",
+    "parents": [
+      "597b71cb-6909-4ac3-bcbd-5c503d2aded1",
+      "c6cb9518-42c9-4700-8c14-4bb4047c2d24"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7221673094169723
+    }
+  },
+  {
+    "id": "ca76920b-51a4-4666-8756-4b4bb2b973de",
+    "content": "LDR LDR LDR hydra",
+    "parents": [
+      "dd91bd83-ce16-4ce1-9393-08cf6052b0f8",
+      "815a1390-dc44-4582-ac03-d41a2415dd7f"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7858133315153175
+    }
+  },
+  {
+    "id": "78235008-263b-4b96-a758-e7675b9b3e67",
+    "content": "p5 CAD hydra",
+    "parents": [
+      "e6f72405-8c3f-4705-bfa6-4beda0d3768f",
+      "fdccf4ad-2d68-474b-bf0c-43b1d9b2ed08"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.7691956297282552
+    }
+  },
+  {
+    "id": "83584cb3-cb7c-4428-a043-053639ce5974",
+    "content": "Zen #Metaphysics CAD 詩 CAD",
+    "parents": [
+      "4067f19f-d02e-432f-898b-8c8abacbd82c",
+      "f32867d1-bca6-49cd-9b7f-e8eb258352f4"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.769380924975744
+    }
+  },
+  {
+    "id": "d8e5980a-a79a-4996-9744-42ffba8dd928",
+    "content": "Zen CAD vercel",
+    "parents": [
+      "b762218d-3cef-4e0c-950e-ccfcda051da1",
+      "74bcac66-b7c5-4d0a-ab6a-b5bb0e228a43"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7346222860554328
+    }
+  },
+  {
+    "id": "7c3fab53-7e01-48cb-afa5-d066ca2f6d5a",
+    "content": "#Dream CAD",
+    "parents": [
+      "ec69ea1a-160e-4927-b3c6-814142f8ec77",
+      "fc3a32ea-7ceb-4b3e-8a42-cee4d8576dbc"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7777247751966554
+    }
+  },
+  {
+    "id": "22417d5a-1ac0-443e-a01c-3d9a259d91cc",
+    "content": "はてなA vercel Metaphysics CAD vercel LDR",
+    "parents": [
+      "95396e72-13d5-4dfd-961d-f07ecbfa691c",
+      "4c3d801f-3ffd-49e8-ba2d-c08d4c7aa42f"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7913186172211253
+    }
+  },
+  {
+    "id": "39fdeea9-0af5-4c49-9724-6e84b664b240",
+    "content": "vercel LDR LDR Cyberpunk Zen",
+    "parents": [
+      "66b25266-21da-4cf6-a46b-d5c41dccb79d",
+      "2bab81c5-b55a-41b4-b9bd-e59a395c19f5"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7197175761190615
+    }
+  },
+  {
+    "id": "46c30818-2f1b-448f-accc-09457a6fc91c",
+    "content": "p5 CAD 詩 Cyberpunk 詩 はてなA Cyberpunk",
+    "parents": [
+      "26f76cdd-b54d-45b7-98b5-1f98ec9c6472",
+      "0fe7d1d8-be8e-4c34-a908-386054ffa061"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.791609583299836
+    }
+  },
+  {
+    "id": "13340fba-135c-4c24-bcc0-a6ad34ff9f99",
+    "content": "Neon LDR LDR",
+    "parents": [
+      "d0bfd13a-b2f8-4c29-9905-38c6dfc414d2",
+      "1d405dda-b275-428a-bbea-46b4357c941b"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.737855341872445
+    }
+  },
+  {
+    "id": "3b1da1f9-a908-4b1c-8bcc-f58bc2f57f91",
+    "content": "#Quantum LDR LDR",
+    "parents": [
+      "7cc6ff74-3ffa-47c2-a3ef-d81df5410f3e",
+      "c8230011-657e-45e8-aeff-0e8eae742221"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7074812994802266
+    }
+  },
+  {
+    "id": "fc4c14d8-7a97-4435-a9c4-36eaa6ca3d9b",
+    "content": "詩 はてなA LDR LDR Dream",
+    "parents": [
+      "5e178556-7443-49fc-96f5-beca18421012",
+      "506cec14-f6a8-4f52-82ae-b0ff9ca3aec1"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7781445056602658
+    }
+  },
+  {
+    "id": "3bfee7e5-cbf2-4b51-987a-f2a4c626d64b",
+    "content": "CAD 詩 CAD p5",
+    "parents": [
+      "fe7cbd3c-40f1-461d-be37-e698c195c181",
+      "3868752e-7e56-4bd6-b5f4-0689a90eea47"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7778280525001173
+    }
+  },
+  {
+    "id": "2b3199d2-0daf-47b8-ac4a-920eda166b65",
+    "content": "LDR LDR Neon LDR",
+    "parents": [
+      "e69a84ae-fd9f-4995-a89d-6d92e830e2da",
+      "9191830c-ba4f-4db8-9921-8452b9083345"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7672916498144922
+    }
+  },
+  {
+    "id": "26f76cdd-b54d-45b7-98b5-1f98ec9c6472",
+    "content": "詩 はてなA Cyberpunk",
+    "parents": [
+      "5ed9f75e-ce67-4527-8cb3-d5cee6d2d69f",
+      "70f34f63-3e54-44f3-b0ba-62df92e15b51"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.7336142400237464
+    }
+  },
+  {
+    "id": "a29ebc6d-91a1-4690-ba05-42c49797b770",
+    "content": "Quantum CAD",
+    "parents": [
+      "102980d3-e518-4bd5-be7a-ba6d0f10e670",
+      "564c2352-56e9-4a12-9de3-71015ea29244"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7671170564327444
+    }
+  },
+  {
+    "id": "53e518ea-0b2e-4ab2-9408-5dfd9e5e6fb2",
+    "content": "LDR hydra CAD 詩",
+    "parents": [
+      "815a1390-dc44-4582-ac03-d41a2415dd7f",
+      "3d650d2a-6ef0-48ad-a932-03917fda77ef"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7672916498144922
+    }
+  },
+  {
+    "id": "b3751d68-84a6-4d0a-85c9-0b6c974e3094",
+    "content": "Metaphysics p5 p5",
+    "parents": [
+      "c8b05894-3412-4f5f-a4b3-964acb1ff885",
+      "7bbe9dd5-ab0d-44c9-8878-9d1b2ccc6703"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7614022089990633
+    }
+  },
+  {
+    "id": "3959b7d9-4ab6-4b46-a7d3-fe1bcce124b7",
+    "content": "Zen CAD vercel 詩 はてなA LDR LDR",
+    "parents": [
+      "5e178556-7443-49fc-96f5-beca18421012",
+      "d8e5980a-a79a-4996-9744-42ffba8dd928"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.760017829588542
+    }
+  },
+  {
+    "id": "a16730ef-e8c6-4403-8e63-c0ff564b0b93",
+    "content": "LDR Neon",
+    "parents": [
+      "a7974ffa-6e42-4e2b-bb90-6e32d8faebc6",
+      "21ef67e8-ab58-4cf6-bd0f-1b69fe165de9"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.8036328612799126
+    }
+  },
+  {
+    "id": "54f3e4c2-d3fd-47e4-87e2-2298c19ad829",
+    "content": "Dream Cyberpunk",
+    "parents": [
+      "fbe6a3b6-a549-43be-91b1-c47cdbee0f07",
+      "fcef2f05-f100-4b81-82a4-9dd4855d7be5"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7593870366251647
+    }
+  },
+  {
+    "id": "c8b09a99-6782-4309-a8b2-4dcf9bdaca7d",
+    "content": "詩 はてなA LDR LDR Dream #Dream CAD",
+    "parents": [
+      "fc4c14d8-7a97-4435-a9c4-36eaa6ca3d9b",
+      "7c3fab53-7e01-48cb-afa5-d066ca2f6d5a"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7260665735378514
+    }
+  },
+  {
+    "id": "adc9e773-52aa-4144-ab61-6ccabf8cc919",
+    "content": "LDR hydra p5 vercel 詩 Dream",
+    "parents": [
+      "e79f1195-a65c-4b1d-a8ff-45ce596a67ed",
+      "506cec14-f6a8-4f52-82ae-b0ff9ca3aec1"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7912676145219072
+    }
+  },
+  {
+    "id": "5ed9f75e-ce67-4527-8cb3-d5cee6d2d69f",
+    "content": "詩 はてなA",
+    "parents": [
+      "db3fec71-f65f-481e-b7fd-c571f860e3dc",
+      "e3430f6f-4308-4049-b57b-c72fb40397db"
+    ],
+    "generation": 1,
+    "fitness": {
+      "novelty": 0.7556793667055872
+    }
+  },
+  {
+    "id": "7b2051e6-308b-4563-9f4b-498949cf67cd",
+    "content": "Neon CAD 詩",
+    "parents": [
+      "21ef67e8-ab58-4cf6-bd0f-1b69fe165de9",
+      "3d650d2a-6ef0-48ad-a932-03917fda77ef"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.7552921944391828
+    }
+  },
+  {
+    "id": "cfe7b6cf-de75-4e79-8bdb-9f8074fdea91",
+    "content": "CAD vercel LDR #Quantum",
+    "parents": [
+      "7cc6ff74-3ffa-47c2-a3ef-d81df5410f3e",
+      "4c3d801f-3ffd-49e8-ba2d-c08d4c7aa42f"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7499756606390665
+    }
+  },
+  {
+    "id": "1114e610-786a-4855-820e-fdde32435052",
+    "content": "Cyberpunk LDR LDR",
+    "parents": [
+      "dd91bd83-ce16-4ce1-9393-08cf6052b0f8",
+      "fcef2f05-f100-4b81-82a4-9dd4855d7be5"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7281609813158121
+    }
+  },
+  {
+    "id": "c49c68b4-28fd-4c53-8b2c-7a7d4a55bf71",
+    "content": "LDR LDR CAD",
+    "parents": [
+      "1d405dda-b275-428a-bbea-46b4357c941b",
+      "564c2352-56e9-4a12-9de3-71015ea29244"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.7536125738978797
+    }
+  },
+  {
+    "id": "f0b3e809-e4f1-46a6-9fe2-cb73354e3c7c",
+    "content": "vercel p5 vercel LDR #Quantum",
+    "parents": [
+      "bb09ea93-e491-4303-b804-240f1ff9dde7",
+      "3ea1e423-6019-4ad8-bb30-3b240ba580cb"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7484574496379144
+    }
+  },
+  {
+    "id": "39c87ca7-6c7d-42ac-ad06-51f18d5aff6e",
+    "content": "Cyberpunk p5 詩 はてなA CAD",
+    "parents": [
+      "0de7a250-8c09-4290-9e0a-09536af589c8",
+      "b078e69f-ec42-4575-9179-7c0bd3021cb7"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7484380997259682
+    }
+  },
+  {
+    "id": "f494408f-86b8-4aad-96f9-57aa2c429910",
+    "content": "p5 CAD 詩 LDR hydra",
+    "parents": [
+      "815a1390-dc44-4582-ac03-d41a2415dd7f",
+      "597b71cb-6909-4ac3-bcbd-5c503d2aded1"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.748020585810397
+    }
+  },
+  {
+    "id": "4d57761a-aa3f-4369-9040-df74bb6e4e80",
+    "content": "#Metaphysics LDR LDR",
+    "parents": [
+      "c4c90236-dc34-46ad-9094-ed27396e0a21",
+      "1d405dda-b275-428a-bbea-46b4357c941b"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.7475312817645818
+    }
+  },
+  {
+    "id": "37b11f00-d3fe-4c03-9f72-6138dddba3c7",
+    "content": "Cyberpunk 詩 はてなA CAD hydra Zen 詩 はてなA",
+    "parents": [
+      "285bef97-021f-4439-87c3-c01757904def",
+      "a91dc0b4-f687-4539-8e9f-2d586b7e2b19"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7530929385881482
+    }
+  },
+  {
+    "id": "d28aaec5-6947-45a6-bf2f-36d3d497f97f",
+    "content": "Cyberpunk CAD p5 vercel はてなA",
+    "parents": [
+      "a131bae2-cf39-484e-85ac-8543554bf622",
+      "e717f090-4f41-429b-b0d8-25aa48b10bdb"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7607413891623629
+    }
+  },
+  {
+    "id": "f32867d1-bca6-49cd-9b7f-e8eb258352f4",
+    "content": "Zen #Metaphysics",
+    "parents": [
+      "994efd55-2049-4a74-b7a9-71d72b844c9a",
+      "c4c90236-dc34-46ad-9094-ed27396e0a21"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7438457919260668
+    }
+  },
+  {
+    "id": "51a79854-6832-41ec-868c-c3fb32a1f9ce",
+    "content": "#Metaphysics CAD p5",
+    "parents": [
+      "e6f72405-8c3f-4705-bfa6-4beda0d3768f",
+      "5770dcd9-30ef-4292-87ce-466ab3101dc5"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.6920817100104983
+    }
+  },
+  {
+    "id": "2bedc103-5eb8-4bc6-8886-f12896d73dde",
+    "content": "LDR LDR Neon LDR LDR p5",
+    "parents": [
+      "2b3199d2-0daf-47b8-ac4a-920eda166b65",
+      "80d45611-8180-4c5f-bd39-2e085fc85ac4"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7412827513363776
+    }
+  },
+  {
+    "id": "9b2e911a-0afc-4a3b-9e06-d0cdf5aca6be",
+    "content": "Neon CAD 詩 はてなA vercel",
+    "parents": [
+      "7b2051e6-308b-4563-9f4b-498949cf67cd",
+      "e1ea3d7e-52f8-4866-81d5-c210d239efc0"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7436230630006131
+    }
+  },
+  {
+    "id": "e5e346dc-b55d-4c08-b160-d046b936f2e1",
+    "content": "#Quantum LDR LDR 詩 はてなA LDR LDR Dream",
+    "parents": [
+      "3b1da1f9-a908-4b1c-8bcc-f58bc2f57f91",
+      "fc4c14d8-7a97-4435-a9c4-36eaa6ca3d9b"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.6891987286533132
+    }
+  },
+  {
+    "id": "5e178556-7443-49fc-96f5-beca18421012",
+    "content": "詩 はてなA LDR LDR",
+    "parents": [
+      "5ed9f75e-ce67-4527-8cb3-d5cee6d2d69f",
+      "c8230011-657e-45e8-aeff-0e8eae742221"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.7428195437250458
+    }
+  },
+  {
+    "id": "4396bf2f-5a1b-4e1a-afa0-5444e7b711cd",
+    "content": "p5 vercel vercel LDR LDR",
+    "parents": [
+      "1d405dda-b275-428a-bbea-46b4357c941b",
+      "202bf015-ac31-405d-bf2c-ba365d1430e8"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7428195437250458
+    }
+  },
+  {
+    "id": "53360f90-ebad-454f-8062-6e0dd02e5c9d",
+    "content": "Zen p5",
+    "parents": [
+      "2bab81c5-b55a-41b4-b9bd-e59a395c19f5",
+      "3868752e-7e56-4bd6-b5f4-0689a90eea47"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7202725550927628
+    }
+  },
+  {
+    "id": "6a8c652d-c7bb-4e9a-bff6-c90e7c453f42",
+    "content": "vercel LDR LDR Cyberpunk はてなA vercel",
+    "parents": [
+      "66b25266-21da-4cf6-a46b-d5c41dccb79d",
+      "e1ea3d7e-52f8-4866-81d5-c210d239efc0"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7420488907933851
+    }
+  },
+  {
+    "id": "45a690e8-6bd9-46ef-b1d9-b4175ab5cba6",
+    "content": "#Metaphysics LDR",
+    "parents": [
+      "a7974ffa-6e42-4e2b-bb90-6e32d8faebc6",
+      "c4c90236-dc34-46ad-9094-ed27396e0a21"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7397623068062353
+    }
+  },
+  {
+    "id": "5682da8b-0fe8-48f5-b35f-1f4600d6b489",
+    "content": "p5 p5 LDR",
+    "parents": [
+      "e69a84ae-fd9f-4995-a89d-6d92e830e2da",
+      "7bbe9dd5-ab0d-44c9-8878-9d1b2ccc6703"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7191879832807304
+    }
+  },
+  {
+    "id": "c4c90236-dc34-46ad-9094-ed27396e0a21",
+    "content": "#Metaphysics",
+    "parents": [],
+    "generation": 1,
+    "fitness": {
+      "novelty": 0.7376522882679991
+    }
+  },
+  {
+    "id": "9191830c-ba4f-4db8-9921-8452b9083345",
+    "content": "LDR LDR Neon",
+    "parents": [
+      "dd91bd83-ce16-4ce1-9393-08cf6052b0f8",
+      "21ef67e8-ab58-4cf6-bd0f-1b69fe165de9"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.7197249035543654
+    }
+  },
+  {
+    "id": "285bef97-021f-4439-87c3-c01757904def",
+    "content": "Cyberpunk 詩 はてなA CAD hydra",
+    "parents": [
+      "d942be2b-c6ef-45df-9309-7a803db27d88",
+      "fdccf4ad-2d68-474b-bf0c-43b1d9b2ed08"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.6662815228395464
+    }
+  },
+  {
+    "id": "2403cd34-369b-4d95-aeca-0b5f0886250d",
+    "content": "Dream Cyberpunk p5 vercel hydra 詩",
+    "parents": [
+      "54f3e4c2-d3fd-47e4-87e2-2298c19ad829",
+      "3ff98755-04f0-446b-9026-ff7fab6ae05b"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7376522882679991
+    }
+  },
+  {
+    "id": "5bd3077c-a316-41f5-8f96-fd48ab4163dd",
+    "content": "CAD LDR p5 Quantum p5 p5",
+    "parents": [
+      "caa39844-0914-4371-a696-04524b0f9a32",
+      "7bbe9dd5-ab0d-44c9-8878-9d1b2ccc6703"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7364729067149264
+    }
+  },
+  {
+    "id": "18c05beb-a4b8-476d-91f9-93619b0ec884",
+    "content": "LDR LDR LDR hydra Zen 詩 はてなA",
+    "parents": [
+      "ca76920b-51a4-4666-8756-4b4bb2b973de",
+      "a91dc0b4-f687-4539-8e9f-2d586b7e2b19"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7364729067149264
+    }
+  },
+  {
+    "id": "95396e72-13d5-4dfd-961d-f07ecbfa691c",
+    "content": "はてなA vercel Metaphysics",
+    "parents": [
+      "e1ea3d7e-52f8-4866-81d5-c210d239efc0",
+      "c8b05894-3412-4f5f-a4b3-964acb1ff885"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.8079563543918793
+    }
+  },
+  {
+    "id": "1b9575d9-5410-4a9b-819d-f51402b4567d",
+    "content": "Zen 詩 はてなA CAD LDR",
+    "parents": [
+      "e93ed3b4-637c-4dda-b566-7ec0a3158b5c",
+      "a91dc0b4-f687-4539-8e9f-2d586b7e2b19"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7344652769298478
+    }
+  },
+  {
+    "id": "2f8d1322-9df0-49d7-b64e-ed3ec8136590",
+    "content": "Cyberpunk hydra CAD 詩 CAD",
+    "parents": [
+      "4067f19f-d02e-432f-898b-8c8abacbd82c",
+      "c56df1d8-885b-47ae-adf4-96075644a576"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7344652769298478
+    }
+  },
+  {
+    "id": "46f06659-de77-4420-beac-941d0c059b99",
+    "content": "p5 CAD hydra p5",
+    "parents": [
+      "78235008-263b-4b96-a758-e7675b9b3e67",
+      "52b5d982-d050-4adb-bd82-e8730c8232a9"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7335981610960618
+    }
+  },
+  {
+    "id": "a7b6a875-96cc-45be-8379-b1d226c4a047",
+    "content": "p5 p5 LDR #Metaphysics p5 vercel",
+    "parents": [
+      "55092fdb-347b-4b79-ae62-10d5e7a26983",
+      "1e67c384-0699-4b03-9f35-ed062a1c81cf"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7454873357302192
+    }
+  },
+  {
+    "id": "47c26bc1-606d-40ca-8190-7050497e14ec",
+    "content": "CAD LDR p5 p5 p5",
+    "parents": [
+      "3fb60e59-f3a4-40fe-9e27-eae87ebb6e55",
+      "7bbe9dd5-ab0d-44c9-8878-9d1b2ccc6703"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7315075004020819
+    }
+  },
+  {
+    "id": "835f409f-39fe-45c2-bf9d-b7d9dd355992",
+    "content": "CAD LDR vercel LDR LDR",
+    "parents": [
+      "b74e6cb5-a4bd-4dbd-ac87-a23073f1bf7f",
+      "2efa12d6-a80b-4054-93f1-fd3a76c39ef0"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.6924257598069536
+    }
+  },
+  {
+    "id": "5770dcd9-30ef-4292-87ce-466ab3101dc5",
+    "content": "#Metaphysics CAD",
+    "parents": [
+      "be69a3e0-5a46-4d13-b44a-eac9ffbe86dc",
+      "c4c90236-dc34-46ad-9094-ed27396e0a21"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7447356586214358
+    }
+  },
+  {
+    "id": "ef31b847-950f-41e4-9d40-086e02e9c277",
+    "content": "vercel LDR LDR Cyberpunk 詩 はてなA",
+    "parents": [
+      "66b25266-21da-4cf6-a46b-d5c41dccb79d",
+      "5ed9f75e-ce67-4527-8cb3-d5cee6d2d69f"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.729672230367109
+    }
+  },
+  {
+    "id": "b74e6cb5-a4bd-4dbd-ac87-a23073f1bf7f",
+    "content": "vercel LDR LDR",
+    "parents": [
+      "5de64685-6376-47fd-a626-05a693a7af94",
+      "c8230011-657e-45e8-aeff-0e8eae742221"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.7280079378218178
+    }
+  },
+  {
+    "id": "fc7c778e-ba8a-4732-aa03-15f70c3f0b03",
+    "content": "Cyberpunk hydra 詩",
+    "parents": [
+      "5a50e123-173b-41e0-bb35-b07ff72bfdb5",
+      "c56df1d8-885b-47ae-adf4-96075644a576"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7280079378218178
+    }
+  },
+  {
+    "id": "d8832f06-d638-4af1-ad1b-8710328c4dc3",
+    "content": "はてなA p5",
+    "parents": [
+      "48261702-5666-4b8c-b9bb-1994fe5ccb5a",
+      "e6f72405-8c3f-4705-bfa6-4beda0d3768f"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.7313530371371002
+    }
+  },
+  {
+    "id": "d9c8ae5c-ac89-4de5-adfb-017f560e2192",
+    "content": "LDR Neon CAD vercel LDR",
+    "parents": [
+      "a16730ef-e8c6-4403-8e63-c0ff564b0b93",
+      "4c3d801f-3ffd-49e8-ba2d-c08d4c7aa42f"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.651372935657333
+    }
+  },
+  {
+    "id": "ecbc4b46-0b7b-471e-9d59-ca24ae8a7057",
+    "content": "p5 vercel vercel LDR hydra p5 vercel 詩",
+    "parents": [
+      "202bf015-ac31-405d-bf2c-ba365d1430e8",
+      "e79f1195-a65c-4b1d-a8ff-45ce596a67ed"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7716040591365328
+    }
+  },
+  {
+    "id": "45d54fde-9df1-4bb5-9efb-10d09f39eeed",
+    "content": "LDR hydra p5 vercel 詩 vercel p5 vercel LDR #Quantum",
+    "parents": [
+      "e79f1195-a65c-4b1d-a8ff-45ce596a67ed",
+      "f0b3e809-e4f1-46a6-9fe2-cb73354e3c7c"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7186263759390189
+    }
+  },
+  {
+    "id": "86f752a7-ca7f-40d7-960f-d966700b6a77",
+    "content": "Dream Cyberpunk 詩 はてなA",
+    "parents": [
+      "5ed9f75e-ce67-4527-8cb3-d5cee6d2d69f",
+      "54f3e4c2-d3fd-47e4-87e2-2298c19ad829"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7186263759390189
+    }
+  },
+  {
+    "id": "202bf015-ac31-405d-bf2c-ba365d1430e8",
+    "content": "p5 vercel vercel",
+    "parents": [
+      "1e67c384-0699-4b03-9f35-ed062a1c81cf",
+      "f8e79cd9-e8de-47cc-8018-edcda857b84f"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7185802601223247
+    }
+  },
+  {
+    "id": "0de7a250-8c09-4290-9e0a-09536af589c8",
+    "content": "Cyberpunk p5",
+    "parents": [
+      "52b5d982-d050-4adb-bd82-e8730c8232a9",
+      "d44646eb-289e-4ce0-adc0-f587985c9b15"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7185802601223247
+    }
+  },
+  {
+    "id": "b762218d-3cef-4e0c-950e-ccfcda051da1",
+    "content": "CAD vercel",
+    "parents": [
+      "be69a3e0-5a46-4d13-b44a-eac9ffbe86dc",
+      "f8e79cd9-e8de-47cc-8018-edcda857b84f"
+    ],
+    "generation": 1,
+    "fitness": {
+      "novelty": 0.7827752207762024
+    }
+  },
+  {
+    "id": "bb09ea93-e491-4303-b804-240f1ff9dde7",
+    "content": "vercel p5 vercel",
+    "parents": [
+      "5de64685-6376-47fd-a626-05a693a7af94",
+      "86acf8e1-5664-4e29-8022-f0e094f1eecd"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.7536702445744297
+    }
+  },
+  {
+    "id": "e717f090-4f41-429b-b0d8-25aa48b10bdb",
+    "content": "p5 vercel はてなA",
+    "parents": [
+      "1e67c384-0699-4b03-9f35-ed062a1c81cf",
+      "e3430f6f-4308-4049-b57b-c72fb40397db"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.6722015247712871
+    }
+  },
+  {
+    "id": "a1361cae-a0c9-4791-9267-8a6fb2bd1011",
+    "content": "Zen CAD vercel #Metaphysics",
+    "parents": [
+      "d8e5980a-a79a-4996-9744-42ffba8dd928",
+      "c4c90236-dc34-46ad-9094-ed27396e0a21"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7141382561241552
+    }
+  },
+  {
+    "id": "3fb60e59-f3a4-40fe-9e27-eae87ebb6e55",
+    "content": "CAD LDR p5",
+    "parents": [
+      "e93ed3b4-637c-4dda-b566-7ec0a3158b5c",
+      "a1193279-b4bd-430c-88d5-0d0b943ef4d7"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.7141197215357119
+    }
+  },
+  {
+    "id": "66b25266-21da-4cf6-a46b-d5c41dccb79d",
+    "content": "vercel LDR LDR Cyberpunk",
+    "parents": [
+      "70f34f63-3e54-44f3-b0ba-62df92e15b51",
+      "b74e6cb5-a4bd-4dbd-ac87-a23073f1bf7f"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7141197215357119
+    }
+  },
+  {
+    "id": "de768bce-282b-47ba-a0be-d540faad7eed",
+    "content": "Neon Cyberpunk",
+    "parents": [
+      "fcef2f05-f100-4b81-82a4-9dd4855d7be5",
+      "ecc9f077-f269-4b65-a38f-8f53c42393fd"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7343292852675791
+    }
+  },
+  {
+    "id": "8d9a5d17-3614-424c-80ee-3dd5ccfecda0",
+    "content": "hydra",
+    "parents": [],
+    "generation": 0,
+    "fitness": {
+      "novelty": 0.7135789756682474
+    }
+  },
+  {
+    "id": "c56df1d8-885b-47ae-adf4-96075644a576",
+    "content": "Cyberpunk hydra",
+    "parents": [
+      "70f34f63-3e54-44f3-b0ba-62df92e15b51",
+      "8d9a5d17-3614-424c-80ee-3dd5ccfecda0"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7135789756682474
+    }
+  },
+  {
+    "id": "80d45611-8180-4c5f-bd39-2e085fc85ac4",
+    "content": "LDR p5",
+    "parents": [
+      "791a435c-8419-4318-b1f0-a0b199cb59e1",
+      "f0b76142-82e2-43cc-8c50-f315ed52626d"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.731131882029647
+    }
+  },
+  {
+    "id": "7912bc47-b16c-4e95-9f42-578c14df9396",
+    "content": "CAD LDR 詩",
+    "parents": [
+      "4006fe92-ec9e-485c-bbc8-c6bf1a8c9cba",
+      "5a50e123-173b-41e0-bb35-b07ff72bfdb5"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7092247447697503
+    }
+  },
+  {
+    "id": "d009c135-7e13-4f1d-b5fa-a6b7291e7075",
+    "content": "CAD vercel LDR #Quantum Neon",
+    "parents": [
+      "cfe7b6cf-de75-4e79-8bdb-9f8074fdea91",
+      "ecc9f077-f269-4b65-a38f-8f53c42393fd"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7092247447697503
+    }
+  },
+  {
+    "id": "b824ea70-b3f4-4b41-a6b0-f44ab6d61e40",
+    "content": "Neon CAD 詩 Metaphysics",
+    "parents": [
+      "7b2051e6-308b-4563-9f4b-498949cf67cd",
+      "c8b05894-3412-4f5f-a4b3-964acb1ff885"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7090175174753166
+    }
+  },
+  {
+    "id": "ac4e877c-9489-4374-b00d-07d61cdce7b4",
+    "content": "LDR hydra CAD 詩 詩",
+    "parents": [
+      "db3fec71-f65f-481e-b7fd-c571f860e3dc",
+      "53e518ea-0b2e-4ab2-9408-5dfd9e5e6fb2"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7090040042469086
+    }
+  },
+  {
+    "id": "6b1dbcca-9228-4eef-8afa-5050afd31b57",
+    "content": "CAD 詩 Zen p5 CAD 詩",
+    "parents": [
+      "8b0d8fd2-27e3-4a0b-935b-50aa00d371c0",
+      "78e77cce-d4c4-4aba-99eb-9d61869ef372"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7090040042469086
+    }
+  },
+  {
+    "id": "91d35d7b-2418-43b8-b475-e25861671a53",
+    "content": "p5 p5 LDR #Metaphysics Math CAD",
+    "parents": [
+      "55092fdb-347b-4b79-ae62-10d5e7a26983",
+      "7014c2ce-d729-48c2-9d59-001c81c1417e"
+    ],
+    "generation": 4,
+    "fitness": {
+      "novelty": 0.7373949755707155
+    }
+  },
+  {
+    "id": "b8991b0d-8175-4b1c-a3e7-456282eec192",
+    "content": "はてなA p5 Metaphysics",
+    "parents": [
+      "d8832f06-d638-4af1-ad1b-8710328c4dc3",
+      "b02defcf-1d1b-487b-b3c3-e973b0dedf6c"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7085656817621544
+    }
+  },
+  {
+    "id": "e79f1195-a65c-4b1d-a8ff-45ce596a67ed",
+    "content": "LDR hydra p5 vercel 詩",
+    "parents": [
+      "db3fec71-f65f-481e-b7fd-c571f860e3dc",
+      "bfc89c0c-f852-4df3-b279-4c8f40fd91fb"
+    ],
+    "generation": 3,
+    "fitness": {
+      "novelty": 0.7085656817621544
+    }
+  },
+  {
+    "id": "f01c8545-b64e-472b-8909-cb33cb622cc8",
+    "content": "CAD 詩 Zen",
+    "parents": [
+      "3d650d2a-6ef0-48ad-a932-03917fda77ef",
+      "994efd55-2049-4a74-b7a9-71d72b844c9a"
+    ],
+    "generation": 2,
+    "fitness": {
+      "novelty": 0.7090175174753166
+    }
+  },
+  {
+    "id": "ab9ad9a5-0312-4a0d-9654-060eeb8dbf13",
+    "content": "p5 p5 CAD Dream",
+    "parents": [
+      "a69c1ee7-04e4-4e4e-bd85-624e66046a1e",
+      "34678f54-a3de-44b1-9051-0addb56a0e87"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7675886714010967
+    }
+  },
+  {
+    "id": "6f4afa7a-c524-4b79-8309-bea48a3c8ed6",
+    "content": "CAD LDR p5 hydra",
+    "parents": [
+      "8d9a5d17-3614-424c-80ee-3dd5ccfecda0",
+      "3fb60e59-f3a4-40fe-9e27-eae87ebb6e55"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.651372935657333
+    }
+  },
+  {
+    "id": "e6fcfb9b-16c1-46b8-baac-fd3c8aef0d1f",
+    "content": "Cyberpunk p5 CAD LDR p5 Quantum",
+    "parents": [
+      "0de7a250-8c09-4290-9e0a-09536af589c8",
+      "caa39844-0914-4371-a696-04524b0f9a32"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.6427997769091698
+    }
+  },
+  {
+    "id": "b25824d3-2a42-4a45-ad02-096333127545",
+    "content": "Neon CAD 詩 はてなA vercel Quantum",
+    "parents": [
+      "e009b7fa-df28-4576-b606-e7c67a2364de",
+      "9b2e911a-0afc-4a3b-9e06-d0cdf5aca6be"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7617544968297576
+    }
+  },
+  {
+    "id": "ea8791b1-4172-4770-8bbd-36bf346eb701",
+    "content": "#Metaphysics CAD p5 はてなA",
+    "parents": [
+      "51a79854-6832-41ec-868c-c3fb32a1f9ce",
+      "e3430f6f-4308-4049-b57b-c72fb40397db"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.745784343932524
+    }
+  },
+  {
+    "id": "649daba6-af02-4065-86c1-f126ba1d691b",
+    "content": "vercel LDR LDR Cyberpunk 詩 はてなA p5 vercel はてなA",
+    "parents": [
+      "e717f090-4f41-429b-b0d8-25aa48b10bdb",
+      "ef31b847-950f-41e4-9d40-086e02e9c277"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7530929385881482
+    }
+  },
+  {
+    "id": "48001223-2d3b-426f-9c1c-ccd2b3882b15",
+    "content": "LDR LDR Neon LDR CAD vercel LDR",
+    "parents": [
+      "2b3199d2-0daf-47b8-ac4a-920eda166b65",
+      "4c3d801f-3ffd-49e8-ba2d-c08d4c7aa42f"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7447356586214358
+    }
+  },
+  {
+    "id": "b25b8dfc-abc0-4237-b04f-baa7cfca4bba",
+    "content": "Cyberpunk p5 詩 はてなA CAD Cyberpunk LDR LDR",
+    "parents": [
+      "39c87ca7-6c7d-42ac-ad06-51f18d5aff6e",
+      "1114e610-786a-4855-820e-fdde32435052"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7609151421313178
+    }
+  },
+  {
+    "id": "0284d9d0-2489-4c39-97d7-1c3a88b50732",
+    "content": "Neon LDR LDR p5 p5 LDR #Metaphysics p5 vercel",
+    "parents": [
+      "13340fba-135c-4c24-bcc0-a6ad34ff9f99",
+      "a7b6a875-96cc-45be-8379-b1d226c4a047"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7597004630159478
+    }
+  },
+  {
+    "id": "6af442a9-7386-4156-9920-b19880af0175",
+    "content": "CAD vercel LDR LDR",
+    "parents": [
+      "e69a84ae-fd9f-4995-a89d-6d92e830e2da",
+      "1bf5a051-f403-4310-9890-f4e4b586ec37"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7555625965743661
+    }
+  },
+  {
+    "id": "98fbe199-8e7a-4ac8-a639-7242a359cb9e",
+    "content": "Math Neon",
+    "parents": [
+      "21ef67e8-ab58-4cf6-bd0f-1b69fe165de9",
+      "c6cb9518-42c9-4700-8c14-4bb4047c2d24"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.6722015247712871
+    }
+  },
+  {
+    "id": "c9ba9f54-3040-4a9d-ad6f-0f1ff784fdc2",
+    "content": "Cyberpunk CAD Zen",
+    "parents": [
+      "a131bae2-cf39-484e-85ac-8543554bf622",
+      "fe134476-ed6a-4b06-9cea-c63cb52d4d1e"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7191879832807304
+    }
+  },
+  {
+    "id": "815e97d3-7730-40bf-9a3d-04a26ac6deed",
+    "content": "Neon Cyberpunk LDR LDR",
+    "parents": [
+      "de768bce-282b-47ba-a0be-d540faad7eed",
+      "c8230011-657e-45e8-aeff-0e8eae742221"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7401304318983857
+    }
+  },
+  {
+    "id": "931b67fa-6983-4b60-800f-fed74a3aa532",
+    "content": "#Metaphysics LDR p5 vercel",
+    "parents": [
+      "45a690e8-6bd9-46ef-b1d9-b4175ab5cba6",
+      "1e67c384-0699-4b03-9f35-ed062a1c81cf"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7508213358636466
+    }
+  },
+  {
+    "id": "4746681d-3bfd-4bf6-85cd-860e74fcd63c",
+    "content": "Dream 詩 はてなA LDR LDR",
+    "parents": [
+      "fbe6a3b6-a549-43be-91b1-c47cdbee0f07",
+      "5e178556-7443-49fc-96f5-beca18421012"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7090314368794606
+    }
+  },
+  {
+    "id": "4d390caa-5a52-41b8-af88-63b8435427ef",
+    "content": "p5 vercel vercel LDR hydra p5 vercel 詩 p5 CAD 詩 Cyberpunk",
+    "parents": [
+      "ecbc4b46-0b7b-471e-9d59-ca24ae8a7057",
+      "0fe7d1d8-be8e-4c34-a908-386054ffa061"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7411458468528267
+    }
+  },
+  {
+    "id": "f94a5820-1070-4bcd-aabd-1d8ebe3588e9",
+    "content": "CAD LDR vercel LDR LDR 詩 はてなA Cyberpunk",
+    "parents": [
+      "835f409f-39fe-45c2-bf9d-b7d9dd355992",
+      "26f76cdd-b54d-45b7-98b5-1f98ec9c6472"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7607144831168688
+    }
+  },
+  {
+    "id": "16a2b6d7-4521-42c5-9659-7d29a239f6cf",
+    "content": "p5 vercel vercel LDR hydra p5 vercel 詩 LDR Neon",
+    "parents": [
+      "a16730ef-e8c6-4403-8e63-c0ff564b0b93",
+      "ecbc4b46-0b7b-471e-9d59-ca24ae8a7057"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7536125738978797
+    }
+  },
+  {
+    "id": "70ac26f7-8515-4349-a3f7-3e354a2facb7",
+    "content": "p5 vercel vercel LDR hydra p5 vercel 詩 vercel p5 vercel LDR #Quantum",
+    "parents": [
+      "f0b3e809-e4f1-46a6-9fe2-cb73354e3c7c",
+      "ecbc4b46-0b7b-471e-9d59-ca24ae8a7057"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7313530371371002
+    }
+  },
+  {
+    "id": "70fd6b78-ce98-4348-a3a3-d64f7e41a33f",
+    "content": "Cyberpunk Zen",
+    "parents": [
+      "fcef2f05-f100-4b81-82a4-9dd4855d7be5",
+      "994efd55-2049-4a74-b7a9-71d72b844c9a"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.734696116582445
+    }
+  },
+  {
+    "id": "7db8a1dc-f5e0-4e3a-a58e-fa2f4c9a6488",
+    "content": "LDR hydra p5 vercel 詩 vercel p5 vercel LDR #Quantum CAD LDR",
+    "parents": [
+      "2efa12d6-a80b-4054-93f1-fd3a76c39ef0",
+      "45d54fde-9df1-4bb5-9efb-10d09f39eeed"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7466207099732067
+    }
+  },
+  {
+    "id": "1242119e-8c37-45e8-9fa4-e07fe977a847",
+    "content": "#Quantum LDR LDR vercel LDR Neon p5 Zen 詩 はてなA CAD LDR",
+    "parents": [
+      "fd2e3475-7825-45da-b07c-c28db564b2ee",
+      "12d0f993-284c-4e34-a653-ca7aedaf9a8a"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7252250812317017
+    }
+  },
+  {
+    "id": "d3d15446-c567-482b-a0dd-65dbe4f59eb2",
+    "content": "LDR LDR はてなA",
+    "parents": [
+      "e3430f6f-4308-4049-b57b-c72fb40397db",
+      "1d405dda-b275-428a-bbea-46b4357c941b"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.6920817100104983
+    }
+  },
+  {
+    "id": "bf088ed7-ec16-48df-b6a9-92ff0aca3904",
+    "content": "vercel LDR LDR LDR #Metaphysics",
+    "parents": [
+      "b74e6cb5-a4bd-4dbd-ac87-a23073f1bf7f",
+      "ec0c3bb7-4d6e-42e5-b531-b1ba1131bb93"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.734696116582445
+    }
+  },
+  {
+    "id": "dfdab5ef-0cce-4886-9df0-1d80395f47c4",
+    "content": "LDR LDR CAD CAD vercel LDR p5",
+    "parents": [
+      "9f2b74b2-ef56-446c-bc86-13a5a5a478c0",
+      "e6f72405-8c3f-4705-bfa6-4beda0d3768f"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.6924257598069536
+    }
+  },
+  {
+    "id": "4a1b477c-d524-4014-a538-ec2d181e8595",
+    "content": "vercel p5 vercel LDR #Quantum Cyberpunk",
+    "parents": [
+      "f0b3e809-e4f1-46a6-9fe2-cb73354e3c7c",
+      "f1d42067-de6f-43e3-a545-5049e9285595"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7159737442239082
+    }
+  },
+  {
+    "id": "1926dd85-fead-4411-9fc3-3363e0c73ecd",
+    "content": "CAD hydra LDR LDR CAD p5 vercel",
+    "parents": [
+      "2678e4b8-be16-488a-b5df-938b25ffe9bb",
+      "28813968-cfe5-4ff2-ae48-7dbcc865fa3d"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7108710641563218
+    }
+  },
+  {
+    "id": "d54711fc-61f3-42f4-8d8b-c7eaed2befaa",
+    "content": "Neon LDR",
+    "parents": [
+      "a7974ffa-6e42-4e2b-bb90-6e32d8faebc6",
+      "21ef67e8-ab58-4cf6-bd0f-1b69fe165de9"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.0
+    }
+  },
+  {
+    "id": "1c2cc2df-90c5-42cc-8442-919767f27639",
+    "content": "LDR LDR CAD p5 vercel Cyberpunk CAD",
+    "parents": [
+      "28813968-cfe5-4ff2-ae48-7dbcc865fa3d",
+      "f2271278-61b7-46b7-8c86-7319bba91596"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7775005704926874
+    }
+  },
+  {
+    "id": "85d1b36f-0ffe-4d7f-a439-792088fbcb62",
+    "content": "p5 vercel vercel LDR LDR Neon",
+    "parents": [
+      "4396bf2f-5a1b-4e1a-afa0-5444e7b711cd",
+      "f5d2bb6c-b572-49e6-92a2-859b4c3c0f90"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7197249035543654
+    }
+  },
+  {
+    "id": "7e08ea72-6f37-475e-9882-78fb481ecd9b",
+    "content": "LDR LDR Neon LDR LDR p5 LDR Neon p5 Zen 詩 はてなA CAD LDR",
+    "parents": [
+      "2bedc103-5eb8-4bc6-8886-f12896d73dde",
+      "12d0f993-284c-4e34-a653-ca7aedaf9a8a"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.6427997769091698
+    }
+  },
+  {
+    "id": "8eb0c59c-2e9c-4c67-9eb0-bb87ac213389",
+    "content": "CAD 詩 CAD vercel p5 vercel LDR",
+    "parents": [
+      "0c63e71c-be00-4d55-9cb4-1d86b861ea1c",
+      "e69a84ae-fd9f-4995-a89d-6d92e830e2da"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7336142400237464
+    }
+  },
+  {
+    "id": "c1afede4-f959-4149-9b2c-0c60c23a692e",
+    "content": "詩 はてなA LDR LDR Dream はてなA",
+    "parents": [
+      "fc4c14d8-7a97-4435-a9c4-36eaa6ca3d9b",
+      "48261702-5666-4b8c-b9bb-1994fe5ccb5a"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7074812994802266
+    }
+  },
+  {
+    "id": "459db96c-992a-4096-9584-a102140850da",
+    "content": "#Metaphysics LDR LDR hydra 詩",
+    "parents": [
+      "ee1208c1-f802-4826-baa5-e55d02141a54",
+      "4d57761a-aa3f-4369-9040-df74bb6e4e80"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7617544968297576
+    }
+  },
+  {
+    "id": "5bb61ad0-e216-479a-a597-bcff4d6ce8f7",
+    "content": "vercel p5 vercel LDR #Quantum LDR",
+    "parents": [
+      "f0b3e809-e4f1-46a6-9fe2-cb73354e3c7c",
+      "e69a84ae-fd9f-4995-a89d-6d92e830e2da"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7197175761190615
+    }
+  },
+  {
+    "id": "c3246d18-79fa-487a-bc1b-65d6071624d3",
+    "content": "LDR p5 CAD vercel LDR #Quantum",
+    "parents": [
+      "80d45611-8180-4c5f-bd39-2e085fc85ac4",
+      "cfe7b6cf-de75-4e79-8bdb-9f8074fdea91"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.737855341872445
+    }
+  },
+  {
+    "id": "40cbd23b-c5ab-4f0f-8873-8e877414d975",
+    "content": "詩 はてなA Cyberpunk Math",
+    "parents": [
+      "26f76cdd-b54d-45b7-98b5-1f98ec9c6472",
+      "f9f4ff3f-2f24-4a50-8beb-10afd9648385"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7346222860554328
+    }
+  },
+  {
+    "id": "74443ebb-15d1-4186-a0ba-76c34abc150e",
+    "content": "LDR Neon CAD vercel LDR CAD 詩",
+    "parents": [
+      "3d650d2a-6ef0-48ad-a932-03917fda77ef",
+      "d9c8ae5c-ac89-4de5-adfb-017f560e2192"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.8078871429837946
+    }
+  },
+  {
+    "id": "55179a23-d62a-4aaf-ba8a-b77489741b87",
+    "content": "Quantum LDR LDR LDR #Metaphysics",
+    "parents": [
+      "ec0c3bb7-4d6e-42e5-b531-b1ba1131bb93",
+      "6a7634d2-48af-48af-911a-20d84facf0b6"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7986943891884792
+    }
+  },
+  {
+    "id": "bac69353-0e66-4e05-bb72-3f281b2207b1",
+    "content": "LDR Neon p5 Zen 詩 はてなA CAD LDR Zen 詩 はてなA",
+    "parents": [
+      "12d0f993-284c-4e34-a653-ca7aedaf9a8a",
+      "a91dc0b4-f687-4539-8e9f-2d586b7e2b19"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.6891987286533132
+    }
+  },
+  {
+    "id": "6bad7dad-aae7-4afb-ab16-1e488f263b10",
+    "content": "CAD CAD",
+    "parents": [
+      "fc3a32ea-7ceb-4b3e-8a42-cee4d8576dbc",
+      "be69a3e0-5a46-4d13-b44a-eac9ffbe86dc"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7090314368794606
+    }
+  },
+  {
+    "id": "1360aa57-6da9-43b7-9be3-e3013a684fb6",
+    "content": "CAD vercel LDR はてなA vercel",
+    "parents": [
+      "1bf5a051-f403-4310-9890-f4e4b586ec37",
+      "e1ea3d7e-52f8-4866-81d5-c210d239efc0"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7859434833386946
+    }
+  },
+  {
+    "id": "4b70de83-ace9-4685-a83e-1bb03719371e",
+    "content": "LDR LDR Neon LDR 詩",
+    "parents": [
+      "2b3199d2-0daf-47b8-ac4a-920eda166b65",
+      "db3fec71-f65f-481e-b7fd-c571f860e3dc"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7507734306899482
+    }
+  },
+  {
+    "id": "e51dba8f-863c-4265-81eb-75d9699abfb6",
+    "content": "Neon LDR hydra",
+    "parents": [
+      "8d9a5d17-3614-424c-80ee-3dd5ccfecda0",
+      "bd3afff7-a4b7-427a-86ff-7a450f6967d3"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7108710641563218
+    }
+  },
+  {
+    "id": "21c08af2-c355-4fea-b3cb-04722d7e05a8",
+    "content": "LDR Neon p5 Zen 詩 はてなA CAD LDR LDR hydra p5 vercel 詩 Dream",
+    "parents": [
+      "12d0f993-284c-4e34-a653-ca7aedaf9a8a",
+      "adc9e773-52aa-4144-ab61-6ccabf8cc919"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7221673094169723
+    }
+  },
+  {
+    "id": "baacd61c-2c04-4314-82dd-ce5111d396f9",
+    "content": "CAD 詩 CAD p5 CAD 詩 Zen p5",
+    "parents": [
+      "3bfee7e5-cbf2-4b51-987a-f2a4c626d64b",
+      "78e77cce-d4c4-4aba-99eb-9d61869ef372"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7109783960430173
+    }
+  },
+  {
+    "id": "a976baae-91b7-4836-a6d7-3b177cf006ff",
+    "content": "Zen CAD vercel 詩 はてなA LDR LDR p5 p5 LDR #Metaphysics",
+    "parents": [
+      "3959b7d9-4ab6-4b46-a7d3-fe1bcce124b7",
+      "55092fdb-347b-4b79-ae62-10d5e7a26983"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.6662815228395464
+    }
+  },
+  {
+    "id": "a88d9703-3288-43c7-9574-cf652337fe1c",
+    "content": "p5 vercel vercel LDR Neon CAD vercel LDR p5 CAD 詩 Cyberpunk",
+    "parents": [
+      "0fe7d1d8-be8e-4c34-a908-386054ffa061",
+      "7eb14adf-1172-4290-b459-40b1bab6f052"
+    ],
+    "generation": 5,
+    "fitness": {
+      "novelty": 0.7343292852675791
+    }
+  }
+]

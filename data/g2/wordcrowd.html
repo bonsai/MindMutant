@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMutant Word Crowd</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            display: flex;
+            flex-wrap: wrap;
+            justify_content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .tag {
+            margin: 10px;
+            padding: 5px 10px;
+            background-color: #333;
+            border-radius: 5px;
+            transition: transform 0.2s;
+            cursor: default;
+            white-space: nowrap;
+        }
+        .tag:hover {
+            transform: scale(1.1);
+            background-color: #444;
+            color: #fff;
+            z-index: 10;
+        }
+        .tag.selected {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #fff;
+        }
+        #controls {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            z-index: 100;
+        }
+        button {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0b7dda;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <button onclick="copyPrompt()">📋 Generate & Copy Prompt</button>
+    </div>
+    <div id="container" style="text-align: center; margin-bottom: 80px;">
+        <span class="tag" style="font-size: 26px; color: hsl(183, 71%, 64%);" title="#Dream" onclick="toggleSelection(this)">#Dream</span>
+        <span class="tag" style="font-size: 21px; color: hsl(16, 83%, 70%);" title="#Metaphysics" onclick="toggleSelection(this)">#Metaphysics</span>
+        <span class="tag" style="font-size: 27px; color: hsl(33, 82%, 78%);" title="#Metaphysics LDR LDR" onclick="toggleSelection(this)">#Metaphysics LDR LDR</span>
+        <span class="tag" style="font-size: 16px; color: hsl(315, 66%, 72%);" title="#Quantum" onclick="toggleSelection(this)">#Quantum</span>
+        <span class="tag" style="font-size: 41px; color: hsl(46, 85%, 76%);" title="CAD" onclick="toggleSelection(this)">CAD</span>
+        <span class="tag" style="font-size: 24px; color: hsl(58, 75%, 70%);" title="CAD LDR" onclick="toggleSelection(this)">CAD LDR</span>
+        <span class="tag" style="font-size: 23px; color: hsl(334, 90%, 84%);" title="CAD LDR p5" onclick="toggleSelection(this)">CAD LDR p5</span>
+        <span class="tag" style="font-size: 20px; color: hsl(61, 65%, 78%);" title="CAD hydra" onclick="toggleSelection(this)">CAD hydra</span>
+        <span class="tag" style="font-size: 20px; color: hsl(230, 78%, 78%);" title="CAD vercel" onclick="toggleSelection(this)">CAD vercel</span>
+        <span class="tag" style="font-size: 34px; color: hsl(161, 61%, 74%);" title="CAD vercel LDR" onclick="toggleSelection(this)">CAD vercel LDR</span>
+        <span class="tag" style="font-size: 30px; color: hsl(168, 68%, 66%);" title="CAD 詩" onclick="toggleSelection(this)">CAD 詩</span>
+        <span class="tag" style="font-size: 26px; color: hsl(209, 60%, 86%);" title="CAD 詩 CAD" onclick="toggleSelection(this)">CAD 詩 CAD</span>
+        <span class="tag" style="font-size: 25px; color: hsl(84, 83%, 82%);" title="CAD 詩 Zen" onclick="toggleSelection(this)">CAD 詩 Zen</span>
+        <span class="tag" style="font-size: 26px; color: hsl(306, 72%, 66%);" title="Cyberpunk" onclick="toggleSelection(this)">Cyberpunk</span>
+        <span class="tag" style="font-size: 30px; color: hsl(206, 80%, 74%);" title="Cyberpunk 詩 はてなA" onclick="toggleSelection(this)">Cyberpunk 詩 はてなA</span>
+        <span class="tag" style="font-size: 33px; color: hsl(115, 88%, 89%);" title="Dream" onclick="toggleSelection(this)">Dream</span>
+        <span class="tag" style="font-size: 24px; color: hsl(100, 76%, 64%);" title="LDR" onclick="toggleSelection(this)">LDR</span>
+        <span class="tag" style="font-size: 39px; color: hsl(89, 75%, 67%);" title="LDR #Metaphysics" onclick="toggleSelection(this)">LDR #Metaphysics</span>
+        <span class="tag" style="font-size: 47px; color: hsl(312, 79%, 82%);" title="LDR #Quantum" onclick="toggleSelection(this)">LDR #Quantum</span>
+        <span class="tag" style="font-size: 14px; color: hsl(94, 62%, 70%);" title="LDR LDR" onclick="toggleSelection(this)">LDR LDR</span>
+        <span class="tag" style="font-size: 23px; color: hsl(326, 66%, 68%);" title="LDR LDR CAD" onclick="toggleSelection(this)">LDR LDR CAD</span>
+        <span class="tag" style="font-size: 32px; color: hsl(97, 90%, 77%);" title="LDR LDR Neon" onclick="toggleSelection(this)">LDR LDR Neon</span>
+        <span class="tag" style="font-size: 34px; color: hsl(356, 80%, 63%);" title="LDR Neon" onclick="toggleSelection(this)">LDR Neon</span>
+        <span class="tag" style="font-size: 31px; color: hsl(349, 67%, 69%);" title="LDR hydra" onclick="toggleSelection(this)">LDR hydra</span>
+        <span class="tag" style="font-size: 46px; color: hsl(149, 78%, 65%);" title="LDR hydra p5 vercel" onclick="toggleSelection(this)">LDR hydra p5 vercel</span>
+        <span class="tag" style="font-size: 29px; color: hsl(187, 86%, 66%);" title="Math" onclick="toggleSelection(this)">Math</span>
+        <span class="tag" style="font-size: 36px; color: hsl(60, 72%, 84%);" title="Metaphysics" onclick="toggleSelection(this)">Metaphysics</span>
+        <span class="tag" style="font-size: 14px; color: hsl(170, 90%, 61%);" title="Neon" onclick="toggleSelection(this)">Neon</span>
+        <span class="tag" style="font-size: 45px; color: hsl(87, 84%, 75%);" title="Neon CAD 詩" onclick="toggleSelection(this)">Neon CAD 詩</span>
+        <span class="tag" style="font-size: 39px; color: hsl(357, 79%, 90%);" title="Quantum" onclick="toggleSelection(this)">Quantum</span>
+        <span class="tag" style="font-size: 35px; color: hsl(38, 74%, 84%);" title="Zen" onclick="toggleSelection(this)">Zen</span>
+        <span class="tag" style="font-size: 38px; color: hsl(177, 81%, 79%);" title="Zen 詩 はてなA" onclick="toggleSelection(this)">Zen 詩 はてなA</span>
+        <span class="tag" style="font-size: 36px; color: hsl(237, 79%, 76%);" title="hydra" onclick="toggleSelection(this)">hydra</span>
+        <span class="tag" style="font-size: 29px; color: hsl(79, 81%, 78%);" title="hydra 詩" onclick="toggleSelection(this)">hydra 詩</span>
+        <span class="tag" style="font-size: 23px; color: hsl(85, 75%, 79%);" title="p5" onclick="toggleSelection(this)">p5</span>
+        <span class="tag" style="font-size: 46px; color: hsl(325, 83%, 83%);" title="p5 CAD hydra" onclick="toggleSelection(this)">p5 CAD hydra</span>
+        <span class="tag" style="font-size: 25px; color: hsl(196, 88%, 82%);" title="p5 CAD 詩" onclick="toggleSelection(this)">p5 CAD 詩</span>
+        <span class="tag" style="font-size: 48px; color: hsl(223, 85%, 65%);" title="p5 p5" onclick="toggleSelection(this)">p5 p5</span>
+        <span class="tag" style="font-size: 22px; color: hsl(90, 82%, 61%);" title="p5 vercel" onclick="toggleSelection(this)">p5 vercel</span>
+        <span class="tag" style="font-size: 40px; color: hsl(165, 61%, 62%);" title="p5 vercel hydra 詩" onclick="toggleSelection(this)">p5 vercel hydra 詩</span>
+        <span class="tag" style="font-size: 38px; color: hsl(111, 75%, 69%);" title="p5 vercel はてなA" onclick="toggleSelection(this)">p5 vercel はてなA</span>
+        <span class="tag" style="font-size: 14px; color: hsl(28, 86%, 71%);" title="vercel" onclick="toggleSelection(this)">vercel</span>
+        <span class="tag" style="font-size: 40px; color: hsl(253, 72%, 73%);" title="vercel LDR LDR" onclick="toggleSelection(this)">vercel LDR LDR</span>
+        <span class="tag" style="font-size: 43px; color: hsl(115, 73%, 80%);" title="vercel p5 vercel" onclick="toggleSelection(this)">vercel p5 vercel</span>
+        <span class="tag" style="font-size: 21px; color: hsl(347, 83%, 70%);" title="はてなA" onclick="toggleSelection(this)">はてなA</span>
+        <span class="tag" style="font-size: 47px; color: hsl(258, 72%, 61%);" title="はてなA p5" onclick="toggleSelection(this)">はてなA p5</span>
+        <span class="tag" style="font-size: 31px; color: hsl(300, 67%, 63%);" title="はてなA vercel" onclick="toggleSelection(this)">はてなA vercel</span>
+        <span class="tag" style="font-size: 25px; color: hsl(141, 81%, 77%);" title="詩" onclick="toggleSelection(this)">詩</span>
+        <span class="tag" style="font-size: 30px; color: hsl(136, 75%, 89%);" title="詩 はてなA" onclick="toggleSelection(this)">詩 はてなA</span>
+        <span class="tag" style="font-size: 24px; color: hsl(284, 70%, 88%);" title="詩 はてなA Cyberpunk" onclick="toggleSelection(this)">詩 はてなA Cyberpunk</span>
+        <span class="tag" style="font-size: 20px; color: hsl(139, 62%, 75%);" title="詩 はてなA LDR LDR" onclick="toggleSelection(this)">詩 はてなA LDR LDR</span>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle('selected');
+        }
+
+        function copyPrompt() {
+            const selectedElements = document.querySelectorAll('.tag.selected');
+            let words = [];
+            
+            if (selectedElements.length > 0) {
+                // Use selected words
+                selectedElements.forEach(el => words.push(el.innerText));
+            } else {
+                // If nothing selected, use all words (limit to 20 random to avoid too long prompt)
+                const allTags = Array.from(document.querySelectorAll('.tag'));
+                const shuffled = allTags.sort(() => 0.5 - Math.random());
+                words = shuffled.slice(0, 20).map(el => el.innerText);
+                alert("No words selected. Using 20 random words.");
+            }
+
+            const prompt = `Write a short story using these concepts:\n\n${words.join(', ')}`;
+            
+            navigator.clipboard.writeText(prompt).then(() => {
+                alert('Prompt copied to clipboard!\n\n' + prompt);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert('Failed to copy to clipboard.');
+            });
+        }
+    </script>
+</body>
+</html>

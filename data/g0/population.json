@@ -1,0 +1,142 @@
+[
+  {
+    "id": "8d9a5d17-3614-424c-80ee-3dd5ccfecda0",
+    "content": "hydra",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "be69a3e0-5a46-4d13-b44a-eac9ffbe86dc",
+    "content": "CAD",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "e3430f6f-4308-4049-b57b-c72fb40397db",
+    "content": "はてなA",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "8d2e6b80-fe40-4143-b1d6-db73ac7c14d4",
+    "content": "LDR",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "a1193279-b4bd-430c-88d5-0d0b943ef4d7",
+    "content": "p5",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "fc3a32ea-7ceb-4b3e-8a42-cee4d8576dbc",
+    "content": "CAD",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "5de64685-6376-47fd-a626-05a693a7af94",
+    "content": "vercel",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "a7974ffa-6e42-4e2b-bb90-6e32d8faebc6",
+    "content": "LDR",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "3343630e-8810-438f-b5ca-89bfec6fcb4a",
+    "content": "LDR",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "e69a84ae-fd9f-4995-a89d-6d92e830e2da",
+    "content": "LDR",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "db3fec71-f65f-481e-b7fd-c571f860e3dc",
+    "content": "詩",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "e6f72405-8c3f-4705-bfa6-4beda0d3768f",
+    "content": "p5",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "791a435c-8419-4318-b1f0-a0b199cb59e1",
+    "content": "LDR",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "48261702-5666-4b8c-b9bb-1994fe5ccb5a",
+    "content": "はてなA",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "3868752e-7e56-4bd6-b5f4-0689a90eea47",
+    "content": "p5",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "52b5d982-d050-4adb-bd82-e8730c8232a9",
+    "content": "p5",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "564c2352-56e9-4a12-9de3-71015ea29244",
+    "content": "CAD",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "f8e79cd9-e8de-47cc-8018-edcda857b84f",
+    "content": "vercel",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "5a50e123-173b-41e0-bb35-b07ff72bfdb5",
+    "content": "詩",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "f0b76142-82e2-43cc-8c50-f315ed52626d",
+    "content": "p5",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  }
+]

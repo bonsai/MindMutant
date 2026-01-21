@@ -1,0 +1,355 @@
+{
+  "generation": 12,
+  "analysis": [
+    {
+      "id": "13340fba-135c-4c24-bcc0-a6ad34ff9f99",
+      "content": "Neon LDR LDR",
+      "fitness": {
+        "novelty": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": "a16730ef-e8c6-4403-8e63-c0ff564b0b93",
+      "content": "LDR Neon",
+      "fitness": {
+        "novelty": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": "2403cd34-369b-4d95-aeca-0b5f0886250d",
+      "content": "Dream Cyberpunk p5 vercel hydra 詩",
+      "fitness": {
+        "novelty": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": "5770dcd9-30ef-4292-87ce-466ab3101dc5",
+      "content": "#Metaphysics CAD",
+      "fitness": {
+        "novelty": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": "86f752a7-ca7f-40d7-960f-d966700b6a77",
+      "content": "Dream Cyberpunk 詩 はてなA",
+      "fitness": {
+        "novelty": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": "a1361cae-a0c9-4791-9267-8a6fb2bd1011",
+      "content": "Zen CAD vercel #Metaphysics",
+      "fitness": {
+        "novelty": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": "80d45611-8180-4c5f-bd39-2e085fc85ac4",
+      "content": "LDR p5",
+      "fitness": {
+        "novelty": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": "91d35d7b-2418-43b8-b475-e25861671a53",
+      "content": "p5 p5 LDR #Metaphysics Math CAD",
+      "fitness": {
+        "novelty": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": "c1afede4-f959-4149-9b2c-0c60c23a692e",
+      "content": "詩 はてなA LDR LDR Dream はてなA",
+      "fitness": {
+        "novelty": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": "1360aa57-6da9-43b7-9be3-e3013a684fb6",
+      "content": "CAD vercel LDR はてなA vercel",
+      "fitness": {
+        "novelty": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": "415ffef9",
+      "content": "LDR Neon",
+      "fitness": {
+        "novelty": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": "1cb56426",
+      "content": "LDR p5",
+      "fitness": {
+        "novelty": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": "95d901f6",
+      "content": "LDR p5",
+      "fitness": {
+        "novelty": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": "aab9eba6",
+      "content": "LDR Dream",
+      "fitness": {
+        "novelty": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": "e87f6273",
+      "content": "LDR Dream",
+      "fitness": {
+        "novelty": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": "815a1390-dc44-4582-ac03-d41a2415dd7f",
+      "content": "LDR hydra",
+      "fitness": {
+        "novelty": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": "7cc6ff74-3ffa-47c2-a3ef-d81df5410f3e",
+      "content": "#Quantum",
+      "fitness": {
+        "novelty": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": "928b1282-1af1-4018-be95-812ea417e784",
+      "content": "詩 はてなA Cyberpunk LDR",
+      "fitness": {
+        "novelty": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": "83584cb3-cb7c-4428-a043-053639ce5974",
+      "content": "Zen #Metaphysics CAD 詩 CAD",
+      "fitness": {
+        "novelty": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": "22417d5a-1ac0-443e-a01c-3d9a259d91cc",
+      "content": "はてなA vercel Metaphysics CAD vercel LDR",
+      "fitness": {
+        "novelty": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": "fc4c14d8-7a97-4435-a9c4-36eaa6ca3d9b",
+      "content": "詩 はてなA LDR LDR Dream",
+      "fitness": {
+        "novelty": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": "54f3e4c2-d3fd-47e4-87e2-2298c19ad829",
+      "content": "Dream Cyberpunk",
+      "fitness": {
+        "novelty": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": "adc9e773-52aa-4144-ab61-6ccabf8cc919",
+      "content": "LDR hydra p5 vercel 詩 Dream",
+      "fitness": {
+        "novelty": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": "5ed9f75e-ce67-4527-8cb3-d5cee6d2d69f",
+      "content": "詩 はてなA",
+      "fitness": {
+        "novelty": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": "1114e610-786a-4855-820e-fdde32435052",
+      "content": "Cyberpunk LDR LDR",
+      "fitness": {
+        "novelty": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": "c6c05b3f-6419-429c-b4ef-df8da07e88af",
+      "content": "Neon",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "6633ac5e-eab0-42e9-aac4-e034674ac5cb",
+      "content": "LDR",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "5ea588a5-3d50-471f-9710-0f286b70b3c4",
+      "content": "Neon",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "942fd966-4455-4a35-bd97-b1c332674a23",
+      "content": "Neon",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "c0db503f-a09c-4f9c-ad61-b80d53287bcd",
+      "content": "Neon",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "80148d0e-8184-4fd7-b969-3131bbbc3173",
+      "content": "LDR Metaphysics",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "79fa8155-3d36-4070-96eb-21344be1cf11",
+      "content": "Neon Math",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "3df06de8-c919-4c2b-af8c-3b4c343fa1e1",
+      "content": "LDR",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "454b1f30-182f-43c8-9c16-7ec3f7ac9d43",
+      "content": "Neon",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "66ef62c4-17fa-4f5b-8d59-9293bf260940",
+      "content": "LDR",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "d4b0dbfb-8ca0-4717-8f81-5e6306b33152",
+      "content": "Neon vercel",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "c579890b-9914-4a85-a881-50ec9d2198a3",
+      "content": "Neon vercel",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "9c8153f6-67f5-4bba-a38e-90c167395747",
+      "content": "Neon",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "f54f58af-dde9-46a8-bb27-5522ee014c8b",
+      "content": "LDR はてなA",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "c98b90f7-7675-4c02-bd72-27ab2ab1e89a",
+      "content": "Neon Quantum",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "2b562f6f-c6af-4e63-b19d-42dbcd9b8145",
+      "content": "LDR",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "5e109f06-10f1-4eac-bb03-dd0cc80a01ce",
+      "content": "Neon",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "93eff26e-68ab-4613-a507-9fa7ddcb0196",
+      "content": "LDR",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "cd046eac-4432-4036-bccc-336a3a858bf5",
+      "content": "LDR",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "84115d49-d07b-4573-bfc9-67bc2c9bca78",
+      "content": "Neon",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "6710493d-294e-4e67-96b2-9c98fe8ead56",
+      "content": "LDR CAD",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "d7836c54-9eb5-4cab-a7f2-2e8c668d54b3",
+      "content": "LDR Cyberpunk",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "00f2899e-342a-40a8-8e6e-fde6b346ada3",
+      "content": "LDR",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "6c0e9b8b-5c76-4ede-9c5c-14f342e044d3",
+      "content": "LDR CAD",
+      "fitness": {
+        "novelty": 0.0
+      }
+    },
+    {
+      "id": "5bcc256e-23c3-4795-af43-904bc735a9d4",
+      "content": "Neon",
+      "fitness": {
+        "novelty": 0.0
+      }
+    }
+  ]
+}

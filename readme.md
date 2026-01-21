@@ -1,54 +1,77 @@
-IdeaGen-GA: 遺伝的アルゴリズムによるアイデア生成エンジン
-遺伝的アルゴリズム（GA）を活用して、既存の概念を交差・突然変異させ、予期せぬ新しいビジネスアイデアやコンセプトを自動生成するプロジェクトです。
+# MindMutant
 
-🚀 概要
-「アイデアとは既存の要素の新しい組み合わせである」という定義に基づき、単語やコンセプトの集合を「遺伝子」と見なして進化させます。NLP（自然言語処理）を用いて、生成された組み合わせの「意外性」や「意味の通りやすさ」を評価し、最適なアイデアを選別します。
+生物的進化のメタファーを用いたアイデア生成・変異システム。単語同士が「交配」し、世代を経て進化していく過程を可視化します。
 
-🛠 技術スタック
-Core: Python 3.9+
+## 🚀 Quick Start
 
-GA Framework: DEAP (Distributed Evolutionary Algorithms in Python)
+### 1. Setup
+```bash
+pip install -r set/requirements.txt
+```
 
-NLP: spaCy (意味的類似度の計算・評価)
+### 2. Commands
 
-UI: Streamlit (インタラクティブな生成画面)
+#### 状態確認
+現在の世代数を確認します。
+```bash
+python app.py now
+```
 
-🧬 アルゴリズムの設計
-初期人口 (Initialization): 特定のドメイン（例：IT、農業、教育）からキーワードをランダムに抽出し、個体を生成。
+#### 進化 (Pollination)
+新しい単語を投入し、次世代へ進化させます。
+```bash
+python app.py poll
+```
+- `data/addwords.csv` が存在する場合、その単語を新種として取り込みます。
+- 進化完了後、`data/g{N}/wordcrowd.html` が生成されます。
 
-適応度評価 (Fitness):
+#### 次世代生成 (Next Gen)
+外部からの単語投入を行わず、純粋な交配のみで次世代を生成します。
+```bash
+python app.py new
+```
 
-Novelty Score: 単語間のベクトル距離が遠いほど高評価（意外性）。
+#### 災害イベント (Disaster)
+`--die` オプションを付けることで、強制的に災害イベント（人口半減）を引き起こすことができます。通常は3世代ごとに発生します。
+```bash
+python app.py new --die
+python app.py poll --die
+```
 
-Coherence Score: 文脈的に最低限の繋がりがあるかを判定。
+## 📂 Project Structure
 
-進化プロセス:
+```
+MindMutant/
+├── app.py                  # CLI Entry Point
+├── gen/                    # Core Logic
+│   ├── ga/                 # Genetic Algorithm
+│   │   ├── evolution.py    # Evolution Controller
+│   │   ├── repository.py   # Data Access
+│   │   └── analyzer.py     # Population Analysis
+│   ├── nlp/                # Natural Language Processing
+│   │   ├── vectorizer.py   # Word Vectorization
+│   │   └── evaluator.py    # Similarity Evaluation
+│   ├── fitness/            # Fitness Calculation
+│   │   └── score.py        # Scoring Logic (Novelty, etc.)
+│   └── viz/                # Visualization
+│       └── wordcrowd_generator.py # HTML Generator
+├── data/                   # Data Store
+│   ├── g0/                 # Generation 0 (Seeds)
+│   ├── g{N}/               # Generated Generations
+│   │   ├── population.json # Individuals
+│   │   ├── situation.json  # Analysis Data
+│   │   └── wordcrowd.html  # Visualization
+│   └── poll/               # Archived Injected Words
+└── doc/                    # Documentation
+    ├── adr.md              # Architecture Decision Records
+    ├── spec.md             # Specifications
+    └── stack.md            # Technology Stack
+```
 
-Crossover: 2つのアイデアの構成要素を入れ替える。
+## 🧬 Evolution Process
 
-Mutation: 辞書内の別の単語とランダムに入れ替える。
-
-📦 セットアップ
-Bash
-# リポジトリをクローン
-git clone https://github.com/your-username/ideagen-ga.git
-cd ideagen-ga
-
-# 依存関係のインストール
-pip install deap spacy streamlit
-python -m spacy download en_core_web_md
-
-# アプリの起動
-streamlit run app.py
-📝 実装例 (Snippet)
-Python
-# DEAPによる適応度定義の例
-creator.create("FitnessMax", base.Fitness, weights=(1.0,))
-creator.create("Individual", list, fitness=creator.FitnessMax)
-
-def evaluate(individual):
-    # spaCy等を用いてキーワードの組み合わせの「面白さ」を数値化
-    score = calculate_creativity_score(individual)
-    return score,
-🤝 コントリビューション
-新しい評価関数（例：感情分析を用いたポジティブなアイデアの抽出）や、特定の業界に特化したワードセットの追加を歓迎します！
+1.  **Load**: 現在の世代 (`g{N}`) を読み込み。
+2.  **Inject**: `data/addwords.csv` から外部単語を混入。
+3.  **Crossover**: 親単語を組み合わせて子供を生成。
+4.  **Analyze**: 全個体のベクトル化と類似度分析。
+5.  **Visualize**: Novelty（意外性）に基づいたタグクラウドを生成。

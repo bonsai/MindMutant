@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMutant Tag Cloud</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            display: flex;
+            flex-wrap: wrap;
+            justify_content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .tag {
+            margin: 10px;
+            padding: 5px 10px;
+            background-color: #333;
+            border-radius: 5px;
+            transition: transform 0.2s;
+            cursor: default;
+            white-space: nowrap;
+        }
+        .tag:hover {
+            transform: scale(1.1);
+            background-color: #444;
+            color: #fff;
+            z-index: 10;
+        }
+        .tag.selected {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #fff;
+        }
+        #controls {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            z-index: 100;
+        }
+        button {
+            background-color: #2196F3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0b7dda;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <button onclick="copyPrompt()">📋 Generate & Copy Prompt</button>
+    </div>
+    <div id="container" style="text-align: center; margin-bottom: 80px;">
+        <span class="tag" style="font-size: 14px; color: hsl(37, 72%, 88%);" title="#Dream" onclick="toggleSelection(this)">#Dream</span>
+        <span class="tag" style="font-size: 33px; color: hsl(19, 72%, 77%);" title="#Metaphysics" onclick="toggleSelection(this)">#Metaphysics</span>
+        <span class="tag" style="font-size: 33px; color: hsl(190, 63%, 66%);" title="#Quantum" onclick="toggleSelection(this)">#Quantum</span>
+        <span class="tag" style="font-size: 21px; color: hsl(90, 83%, 76%);" title="CAD" onclick="toggleSelection(this)">CAD</span>
+        <span class="tag" style="font-size: 32px; color: hsl(9, 63%, 83%);" title="CAD LDR" onclick="toggleSelection(this)">CAD LDR</span>
+        <span class="tag" style="font-size: 25px; color: hsl(169, 84%, 75%);" title="CAD hydra" onclick="toggleSelection(this)">CAD hydra</span>
+        <span class="tag" style="font-size: 21px; color: hsl(60, 62%, 80%);" title="CAD vercel" onclick="toggleSelection(this)">CAD vercel</span>
+        <span class="tag" style="font-size: 32px; color: hsl(262, 75%, 71%);" title="CAD 詩" onclick="toggleSelection(this)">CAD 詩</span>
+        <span class="tag" style="font-size: 33px; color: hsl(88, 89%, 75%);" title="Cyberpunk" onclick="toggleSelection(this)">Cyberpunk</span>
+        <span class="tag" style="font-size: 32px; color: hsl(311, 67%, 71%);" title="LDR" onclick="toggleSelection(this)">LDR</span>
+        <span class="tag" style="font-size: 26px; color: hsl(259, 67%, 77%);" title="LDR LDR" onclick="toggleSelection(this)">LDR LDR</span>
+        <span class="tag" style="font-size: 46px; color: hsl(174, 65%, 90%);" title="LDR hydra" onclick="toggleSelection(this)">LDR hydra</span>
+        <span class="tag" style="font-size: 32px; color: hsl(64, 86%, 83%);" title="Neon" onclick="toggleSelection(this)">Neon</span>
+        <span class="tag" style="font-size: 43px; color: hsl(215, 62%, 63%);" title="Zen" onclick="toggleSelection(this)">Zen</span>
+        <span class="tag" style="font-size: 30px; color: hsl(257, 62%, 81%);" title="hydra" onclick="toggleSelection(this)">hydra</span>
+        <span class="tag" style="font-size: 44px; color: hsl(14, 85%, 60%);" title="hydra 詩" onclick="toggleSelection(this)">hydra 詩</span>
+        <span class="tag" style="font-size: 19px; color: hsl(169, 62%, 77%);" title="p5" onclick="toggleSelection(this)">p5</span>
+        <span class="tag" style="font-size: 26px; color: hsl(97, 78%, 72%);" title="p5 vercel" onclick="toggleSelection(this)">p5 vercel</span>
+        <span class="tag" style="font-size: 14px; color: hsl(77, 78%, 79%);" title="vercel" onclick="toggleSelection(this)">vercel</span>
+        <span class="tag" style="font-size: 27px; color: hsl(110, 77%, 74%);" title="はてなA" onclick="toggleSelection(this)">はてなA</span>
+        <span class="tag" style="font-size: 38px; color: hsl(241, 83%, 74%);" title="詩" onclick="toggleSelection(this)">詩</span>
+        <span class="tag" style="font-size: 29px; color: hsl(282, 90%, 72%);" title="詩 はてなA" onclick="toggleSelection(this)">詩 はてなA</span>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle('selected');
+        }
+
+        function copyPrompt() {
+            const selectedElements = document.querySelectorAll('.tag.selected');
+            let words = [];
+            
+            if (selectedElements.length > 0) {
+                // Use selected words
+                selectedElements.forEach(el => words.push(el.innerText));
+            } else {
+                // If nothing selected, use all words (limit to 20 random to avoid too long prompt)
+                const allTags = Array.from(document.querySelectorAll('.tag'));
+                const shuffled = allTags.sort(() => 0.5 - Math.random());
+                words = shuffled.slice(0, 20).map(el => el.innerText);
+                alert("No words selected. Using 20 random words.");
+            }
+
+            const prompt = `Write a short story using these concepts:\n\n${words.join(', ')}`;
+            
+            navigator.clipboard.writeText(prompt).then(() => {
+                alert('Prompt copied to clipboard!\n\n' + prompt);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert('Failed to copy to clipboard.');
+            });
+        }
+    </script>
+</body>
+</html>

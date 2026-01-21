@@ -1,0 +1,672 @@
+[
+  {
+    "id": "8d9a5d17-3614-424c-80ee-3dd5ccfecda0",
+    "content": "hydra",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "be69a3e0-5a46-4d13-b44a-eac9ffbe86dc",
+    "content": "CAD",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "e3430f6f-4308-4049-b57b-c72fb40397db",
+    "content": "はてなA",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "8d2e6b80-fe40-4143-b1d6-db73ac7c14d4",
+    "content": "LDR",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "a1193279-b4bd-430c-88d5-0d0b943ef4d7",
+    "content": "p5",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "fc3a32ea-7ceb-4b3e-8a42-cee4d8576dbc",
+    "content": "CAD",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "5de64685-6376-47fd-a626-05a693a7af94",
+    "content": "vercel",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "a7974ffa-6e42-4e2b-bb90-6e32d8faebc6",
+    "content": "LDR",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "3343630e-8810-438f-b5ca-89bfec6fcb4a",
+    "content": "LDR",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "e69a84ae-fd9f-4995-a89d-6d92e830e2da",
+    "content": "LDR",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "db3fec71-f65f-481e-b7fd-c571f860e3dc",
+    "content": "詩",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "e6f72405-8c3f-4705-bfa6-4beda0d3768f",
+    "content": "p5",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "791a435c-8419-4318-b1f0-a0b199cb59e1",
+    "content": "LDR",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "48261702-5666-4b8c-b9bb-1994fe5ccb5a",
+    "content": "はてなA",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "3868752e-7e56-4bd6-b5f4-0689a90eea47",
+    "content": "p5",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "52b5d982-d050-4adb-bd82-e8730c8232a9",
+    "content": "p5",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "564c2352-56e9-4a12-9de3-71015ea29244",
+    "content": "CAD",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "f8e79cd9-e8de-47cc-8018-edcda857b84f",
+    "content": "vercel",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "5a50e123-173b-41e0-bb35-b07ff72bfdb5",
+    "content": "詩",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "f0b76142-82e2-43cc-8c50-f315ed52626d",
+    "content": "p5",
+    "parents": [],
+    "generation": 0,
+    "fitness": {}
+  },
+  {
+    "id": "c4c90236-dc34-46ad-9094-ed27396e0a21",
+    "content": "#Metaphysics",
+    "parents": [],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "7cc6ff74-3ffa-47c2-a3ef-d81df5410f3e",
+    "content": "#Quantum",
+    "parents": [],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "ec69ea1a-160e-4927-b3c6-814142f8ec77",
+    "content": "#Dream",
+    "parents": [],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "70f34f63-3e54-44f3-b0ba-62df92e15b51",
+    "content": "Cyberpunk",
+    "parents": [],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "21ef67e8-ab58-4cf6-bd0f-1b69fe165de9",
+    "content": "Neon",
+    "parents": [],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "994efd55-2049-4a74-b7a9-71d72b844c9a",
+    "content": "Zen",
+    "parents": [],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "ee1208c1-f802-4826-baa5-e55d02141a54",
+    "content": "hydra 詩",
+    "parents": [
+      "8d9a5d17-3614-424c-80ee-3dd5ccfecda0",
+      "db3fec71-f65f-481e-b7fd-c571f860e3dc"
+    ],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "dd91bd83-ce16-4ce1-9393-08cf6052b0f8",
+    "content": "LDR LDR",
+    "parents": [
+      "3343630e-8810-438f-b5ca-89bfec6fcb4a",
+      "a7974ffa-6e42-4e2b-bb90-6e32d8faebc6"
+    ],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "86acf8e1-5664-4e29-8022-f0e094f1eecd",
+    "content": "p5 vercel",
+    "parents": [
+      "e6f72405-8c3f-4705-bfa6-4beda0d3768f",
+      "f8e79cd9-e8de-47cc-8018-edcda857b84f"
+    ],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "e93ed3b4-637c-4dda-b566-7ec0a3158b5c",
+    "content": "CAD LDR",
+    "parents": [
+      "564c2352-56e9-4a12-9de3-71015ea29244",
+      "3343630e-8810-438f-b5ca-89bfec6fcb4a"
+    ],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "8b0d8fd2-27e3-4a0b-935b-50aa00d371c0",
+    "content": "CAD 詩",
+    "parents": [
+      "be69a3e0-5a46-4d13-b44a-eac9ffbe86dc",
+      "db3fec71-f65f-481e-b7fd-c571f860e3dc"
+    ],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "b762218d-3cef-4e0c-950e-ccfcda051da1",
+    "content": "CAD vercel",
+    "parents": [
+      "be69a3e0-5a46-4d13-b44a-eac9ffbe86dc",
+      "f8e79cd9-e8de-47cc-8018-edcda857b84f"
+    ],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "fdccf4ad-2d68-474b-bf0c-43b1d9b2ed08",
+    "content": "CAD hydra",
+    "parents": [
+      "564c2352-56e9-4a12-9de3-71015ea29244",
+      "8d9a5d17-3614-424c-80ee-3dd5ccfecda0"
+    ],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "815a1390-dc44-4582-ac03-d41a2415dd7f",
+    "content": "LDR hydra",
+    "parents": [
+      "e69a84ae-fd9f-4995-a89d-6d92e830e2da",
+      "8d9a5d17-3614-424c-80ee-3dd5ccfecda0"
+    ],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "c8230011-657e-45e8-aeff-0e8eae742221",
+    "content": "LDR LDR",
+    "parents": [
+      "8d2e6b80-fe40-4143-b1d6-db73ac7c14d4",
+      "791a435c-8419-4318-b1f0-a0b199cb59e1"
+    ],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "1e67c384-0699-4b03-9f35-ed062a1c81cf",
+    "content": "p5 vercel",
+    "parents": [
+      "e6f72405-8c3f-4705-bfa6-4beda0d3768f",
+      "5de64685-6376-47fd-a626-05a693a7af94"
+    ],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "5ed9f75e-ce67-4527-8cb3-d5cee6d2d69f",
+    "content": "詩 はてなA",
+    "parents": [
+      "db3fec71-f65f-481e-b7fd-c571f860e3dc",
+      "e3430f6f-4308-4049-b57b-c72fb40397db"
+    ],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "1d405dda-b275-428a-bbea-46b4357c941b",
+    "content": "LDR LDR",
+    "parents": [
+      "791a435c-8419-4318-b1f0-a0b199cb59e1",
+      "e69a84ae-fd9f-4995-a89d-6d92e830e2da"
+    ],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "3d650d2a-6ef0-48ad-a932-03917fda77ef",
+    "content": "CAD 詩",
+    "parents": [
+      "564c2352-56e9-4a12-9de3-71015ea29244",
+      "db3fec71-f65f-481e-b7fd-c571f860e3dc"
+    ],
+    "generation": 1,
+    "fitness": {}
+  },
+  {
+    "id": "c6cb9518-42c9-4700-8c14-4bb4047c2d24",
+    "content": "Math",
+    "parents": [],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "c8b05894-3412-4f5f-a4b3-964acb1ff885",
+    "content": "Metaphysics",
+    "parents": [],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "0ea0d33c-178d-45b5-8838-62f89fda465c",
+    "content": "Quantum",
+    "parents": [],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "506cec14-f6a8-4f52-82ae-b0ff9ca3aec1",
+    "content": "Dream",
+    "parents": [],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "d44646eb-289e-4ce0-adc0-f587985c9b15",
+    "content": "Cyberpunk",
+    "parents": [],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "d0bfd13a-b2f8-4c29-9905-38c6dfc414d2",
+    "content": "Neon",
+    "parents": [],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "74bcac66-b7c5-4d0a-ab6a-b5bb0e228a43",
+    "content": "Zen",
+    "parents": [],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "f9f4ff3f-2f24-4a50-8beb-10afd9648385",
+    "content": "Math",
+    "parents": [],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "b02defcf-1d1b-487b-b3c3-e973b0dedf6c",
+    "content": "Metaphysics",
+    "parents": [],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "102980d3-e518-4bd5-be7a-ba6d0f10e670",
+    "content": "Quantum",
+    "parents": [],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "fbe6a3b6-a549-43be-91b1-c47cdbee0f07",
+    "content": "Dream",
+    "parents": [],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "fcef2f05-f100-4b81-82a4-9dd4855d7be5",
+    "content": "Cyberpunk",
+    "parents": [],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "f5d2bb6c-b572-49e6-92a2-859b4c3c0f90",
+    "content": "Neon",
+    "parents": [],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "2bab81c5-b55a-41b4-b9bd-e59a395c19f5",
+    "content": "Zen",
+    "parents": [],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "26f76cdd-b54d-45b7-98b5-1f98ec9c6472",
+    "content": "詩 はてなA Cyberpunk",
+    "parents": [
+      "5ed9f75e-ce67-4527-8cb3-d5cee6d2d69f",
+      "70f34f63-3e54-44f3-b0ba-62df92e15b51"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "a16730ef-e8c6-4403-8e63-c0ff564b0b93",
+    "content": "LDR Neon",
+    "parents": [
+      "a7974ffa-6e42-4e2b-bb90-6e32d8faebc6",
+      "21ef67e8-ab58-4cf6-bd0f-1b69fe165de9"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "ec0c3bb7-4d6e-42e5-b531-b1ba1131bb93",
+    "content": "LDR #Metaphysics",
+    "parents": [
+      "e69a84ae-fd9f-4995-a89d-6d92e830e2da",
+      "c4c90236-dc34-46ad-9094-ed27396e0a21"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "e717f090-4f41-429b-b0d8-25aa48b10bdb",
+    "content": "p5 vercel はてなA",
+    "parents": [
+      "1e67c384-0699-4b03-9f35-ed062a1c81cf",
+      "e3430f6f-4308-4049-b57b-c72fb40397db"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "f01c8545-b64e-472b-8909-cb33cb622cc8",
+    "content": "CAD 詩 Zen",
+    "parents": [
+      "3d650d2a-6ef0-48ad-a932-03917fda77ef",
+      "994efd55-2049-4a74-b7a9-71d72b844c9a"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "a91dc0b4-f687-4539-8e9f-2d586b7e2b19",
+    "content": "Zen 詩 はてなA",
+    "parents": [
+      "994efd55-2049-4a74-b7a9-71d72b844c9a",
+      "5ed9f75e-ce67-4527-8cb3-d5cee6d2d69f"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "3fb60e59-f3a4-40fe-9e27-eae87ebb6e55",
+    "content": "CAD LDR p5",
+    "parents": [
+      "e93ed3b4-637c-4dda-b566-7ec0a3158b5c",
+      "a1193279-b4bd-430c-88d5-0d0b943ef4d7"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "597b71cb-6909-4ac3-bcbd-5c503d2aded1",
+    "content": "p5 CAD 詩",
+    "parents": [
+      "a1193279-b4bd-430c-88d5-0d0b943ef4d7",
+      "8b0d8fd2-27e3-4a0b-935b-50aa00d371c0"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "d8832f06-d638-4af1-ad1b-8710328c4dc3",
+    "content": "はてなA p5",
+    "parents": [
+      "48261702-5666-4b8c-b9bb-1994fe5ccb5a",
+      "e6f72405-8c3f-4705-bfa6-4beda0d3768f"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "e1ea3d7e-52f8-4866-81d5-c210d239efc0",
+    "content": "はてなA vercel",
+    "parents": [
+      "48261702-5666-4b8c-b9bb-1994fe5ccb5a",
+      "5de64685-6376-47fd-a626-05a693a7af94"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "5e178556-7443-49fc-96f5-beca18421012",
+    "content": "詩 はてなA LDR LDR",
+    "parents": [
+      "5ed9f75e-ce67-4527-8cb3-d5cee6d2d69f",
+      "c8230011-657e-45e8-aeff-0e8eae742221"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "b74e6cb5-a4bd-4dbd-ac87-a23073f1bf7f",
+    "content": "vercel LDR LDR",
+    "parents": [
+      "5de64685-6376-47fd-a626-05a693a7af94",
+      "c8230011-657e-45e8-aeff-0e8eae742221"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "7bbe9dd5-ab0d-44c9-8878-9d1b2ccc6703",
+    "content": "p5 p5",
+    "parents": [
+      "e6f72405-8c3f-4705-bfa6-4beda0d3768f",
+      "f0b76142-82e2-43cc-8c50-f315ed52626d"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "bfc89c0c-f852-4df3-b279-4c8f40fd91fb",
+    "content": "LDR hydra p5 vercel",
+    "parents": [
+      "815a1390-dc44-4582-ac03-d41a2415dd7f",
+      "86acf8e1-5664-4e29-8022-f0e094f1eecd"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "4c3d801f-3ffd-49e8-ba2d-c08d4c7aa42f",
+    "content": "CAD vercel LDR",
+    "parents": [
+      "b762218d-3cef-4e0c-950e-ccfcda051da1",
+      "8d2e6b80-fe40-4143-b1d6-db73ac7c14d4"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "3ff98755-04f0-446b-9026-ff7fab6ae05b",
+    "content": "p5 vercel hydra 詩",
+    "parents": [
+      "1e67c384-0699-4b03-9f35-ed062a1c81cf",
+      "ee1208c1-f802-4826-baa5-e55d02141a54"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "9191830c-ba4f-4db8-9921-8452b9083345",
+    "content": "LDR LDR Neon",
+    "parents": [
+      "dd91bd83-ce16-4ce1-9393-08cf6052b0f8",
+      "21ef67e8-ab58-4cf6-bd0f-1b69fe165de9"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "78235008-263b-4b96-a758-e7675b9b3e67",
+    "content": "p5 CAD hydra",
+    "parents": [
+      "e6f72405-8c3f-4705-bfa6-4beda0d3768f",
+      "fdccf4ad-2d68-474b-bf0c-43b1d9b2ed08"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "3ea1e423-6019-4ad8-bb30-3b240ba580cb",
+    "content": "LDR #Quantum",
+    "parents": [
+      "8d2e6b80-fe40-4143-b1d6-db73ac7c14d4",
+      "7cc6ff74-3ffa-47c2-a3ef-d81df5410f3e"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "4067f19f-d02e-432f-898b-8c8abacbd82c",
+    "content": "CAD 詩 CAD",
+    "parents": [
+      "8b0d8fd2-27e3-4a0b-935b-50aa00d371c0",
+      "fc3a32ea-7ceb-4b3e-8a42-cee4d8576dbc"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "bb09ea93-e491-4303-b804-240f1ff9dde7",
+    "content": "vercel p5 vercel",
+    "parents": [
+      "5de64685-6376-47fd-a626-05a693a7af94",
+      "86acf8e1-5664-4e29-8022-f0e094f1eecd"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "4d57761a-aa3f-4369-9040-df74bb6e4e80",
+    "content": "#Metaphysics LDR LDR",
+    "parents": [
+      "c4c90236-dc34-46ad-9094-ed27396e0a21",
+      "1d405dda-b275-428a-bbea-46b4357c941b"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "d942be2b-c6ef-45df-9309-7a803db27d88",
+    "content": "Cyberpunk 詩 はてなA",
+    "parents": [
+      "70f34f63-3e54-44f3-b0ba-62df92e15b51",
+      "5ed9f75e-ce67-4527-8cb3-d5cee6d2d69f"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "4006fe92-ec9e-485c-bbc8-c6bf1a8c9cba",
+    "content": "CAD LDR",
+    "parents": [
+      "be69a3e0-5a46-4d13-b44a-eac9ffbe86dc",
+      "a7974ffa-6e42-4e2b-bb90-6e32d8faebc6"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "c49c68b4-28fd-4c53-8b2c-7a7d4a55bf71",
+    "content": "LDR LDR CAD",
+    "parents": [
+      "1d405dda-b275-428a-bbea-46b4357c941b",
+      "564c2352-56e9-4a12-9de3-71015ea29244"
+    ],
+    "generation": 2,
+    "fitness": {}
+  },
+  {
+    "id": "7b2051e6-308b-4563-9f4b-498949cf67cd",
+    "content": "Neon CAD 詩",
+    "parents": [
+      "21ef67e8-ab58-4cf6-bd0f-1b69fe165de9",
+      "3d650d2a-6ef0-48ad-a932-03917fda77ef"
+    ],
+    "generation": 2,
+    "fitness": {}
+  }
+]
