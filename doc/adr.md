@@ -45,3 +45,7 @@
 ## 11. Sentence Evolution (2026-01-22)
 - **Decision**: Introduce syntax-aware mutation (`mutation.py`) that evolves single words into phrases using connectors (e.g., "みたいな", "を使って", "的").
 - **Reason**: To enable the evolution of complex ideas and sentences from simple keywords, mimicking the development of language/concepts.
+
+## 12. Cloud Environment Strategy (2026-01-22)
+- **Decision**: Prioritize Google Colab optimization. Use Google Drive for storage initially, with plans to integrate Google Cloud Platform (GCP) later.
+- **Reason**: To leverage Colab's computational resources for heavy evolution tasks. Google Drive offers simple initial persistence, while GCP will provide robust scalability and storage in the future.
