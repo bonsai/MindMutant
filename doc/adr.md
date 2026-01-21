@@ -37,3 +37,11 @@
 ## 9. Legacy Freeze & Refactoring (2026-01-21)
 - **Decision**: Freeze the custom GA implementation into `gen/.ga` (hidden archive) and consolidate the active DEAP implementation into `gen/deap/`.
 - **Reason**: To clarify the active codebase, reduce confusion, and officially transition to the DEAP-based engine while preserving legacy code for reference.
+
+## 10. Source Directory Standardization (2026-01-22)
+- **Decision**: Rename `gen` directory to `src` and standardize module structure.
+- **Reason**: To follow common Python project conventions, improving discoverability and tooling compatibility.
+
+## 11. Sentence Evolution (2026-01-22)
+- **Decision**: Introduce syntax-aware mutation (`mutation.py`) that evolves single words into phrases using connectors (e.g., "みたいな", "を使って", "的").
+- **Reason**: To enable the evolution of complex ideas and sentences from simple keywords, mimicking the development of language/concepts.
