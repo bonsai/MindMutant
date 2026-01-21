@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import HTMLResponse
 import sys
 import os
 import re
@@ -46,19 +47,39 @@ def get_latest_generation():
                 max_g = g_num
     return max_g
 
-@app.get("/")
+@app.get("/", response_class=HTMLResponse)
 def read_root_index():
     """
     Root endpoint for the API.
-    
-    Returns:
-        dict: A welcome message and status information.
+    Serves the latest wordcrowd.html if available, otherwise acts as an API root.
     """
-    return {
-        "message": "Welcome to MindMutant API",
-        "status": "running",
-        "documentation": "/api/docs"
-    }
+    latest_g = get_latest_generation()
+    if latest_g >= 0:
+        html_path = os.path.join(DATA_DIR, f"g{latest_g}", "wordcrowd.html")
+        if os.path.exists(html_path):
+            with open(html_path, "r", encoding="utf-8") as f:
+                content = f.read()
+            return content
+            
+    # Fallback response
+    return """
+    <html>
+        <head>
+            <title>MindMutant API</title>
+            <style>
+                body { font-family: sans-serif; background: #1a1a1a; color: #fff; text-align: center; padding-top: 50px; }
+                a { color: #4CAF50; }
+            </style>
+        </head>
+        <body>
+            <h1>MindMutant API</h1>
+            <p>Welcome to the MindMutant API.</p>
+            <p>No visualization found (or data directory is empty).</p>
+            <p>Status: Running</p>
+            <p><a href="/api/docs">API Documentation</a></p>
+        </body>
+    </html>
+    """
 
 @app.get("/api")
 def read_root():
