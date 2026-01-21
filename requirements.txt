@@ -1,8 +1,8 @@
 deap
-spacy
-streamlit
+# spacy - Skipped for Vercel 250MB limit (Using fallback vectorizer)
+# streamlit - Skipped for Vercel (Only needed for local dashboard)
 numpy<2
-scikit-learn
-pandas
+# scikit-learn - Skipped for Vercel
+# pandas - Skipped for Vercel
 fastapi
 uvicorn
