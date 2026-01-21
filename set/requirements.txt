@@ -1,8 +1,0 @@
-deap
-spacy
-streamlit
-numpy<2
-scikit-learn
-pandas
-fastapi
-uvicorn
